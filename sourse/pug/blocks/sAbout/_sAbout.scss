@@ -1,0 +1,407 @@
+
+.sAbout {
+	@include media-breakpoint-down(xxl) {
+		&__formDataBox{
+			max-width: 308px;
+			width: 100%;
+		}
+		&__form1{
+			max-width: 581px;
+			max-height: 136px;
+		}
+		&__formBtn{
+			max-width: 308px;
+			width: 100%;
+		}
+		&__formSecurity {
+			margin-left: 80px;
+		}
+		&__ourBenefit {
+			--bs-gutter-y: 30px;
+			--bs-gutter-x: 30px;
+		}
+
+	}
+	@include media-breakpoint-down(xl) {
+		&__formDataBox{
+			max-width: 258px;
+			width: 100%;
+		}
+		&__btn{
+			margin-left: 60px;
+		}
+		&__form1{
+			max-width: 481px;
+			max-height: 136px;
+		}
+		&__formBtn{
+			max-width: 258px;
+			width: 100%;
+		}
+		&__formSecurity {
+			margin-left: 50px;
+		}
+	}
+	@include media-breakpoint-down(lg) {
+		&__history{
+			flex-direction: column;
+			align-items: center;
+		}
+		&__formDataBox{
+			max-width: 258px;
+			width: 100%;
+		}
+		&__form2{
+			font-size: 15px;
+		}
+		&__form1{
+			font-size: 15px;
+			max-width: 258px;
+			max-height: 136px;
+		}
+		&__formBtn{
+			max-width: 258px;
+			width: 100%;
+		}
+		&__formSecurity {
+			margin-left: 50px;
+			font-size: 11px;
+			a{
+				color: $white;
+			}
+		}
+		&__formHeader{
+			font-size: 27px;
+		}
+		&__formText{
+			font-size: 13px;
+		}
+	}
+	@include media-breakpoint-down(md) {
+		&__formInputsBox{
+		}
+		&__formDataBox{
+			margin-bottom: 30px;
+			max-width: 155px;
+			max-height: 126px;
+		}
+		&__form1{
+			font-size: 15px;
+			margin-bottom: 30px;
+		}
+		&__formInputsBox{
+			display: flex;
+			flex-direction: column;
+		}
+		&__formFooter{
+			flex-direction: column;
+		}
+		&__form1{
+			max-width: 355px;
+			max-height: 126px;
+		}
+		&__formDataBox{
+			max-width: 355px;
+			width: 100%;
+		}
+		&__formBtn{
+			max-width: 355px;
+			width: 100%;
+			padding: 13px 0;
+			margin-bottom: 30px;
+		}
+		&__formSecurity{
+			margin-left: 0;
+			font-size: 10px;
+		}
+		&__formFooter{
+		}
+
+	}
+	@include media-breakpoint-down(sm) {
+		&__formDataBox{
+
+		}
+		&__form1{
+
+		}
+		&__formFooter{
+			align-items: flex-start;
+			max-width: 403px;
+		}
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	&__backGroundAbout {
+		object-fit: cover;
+		position: absolute;
+		top: rem(205);
+		left: 0;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		max-height: rem(617);
+	}
+	&__MenuAbout {
+		z-index: 1;
+		margin-bottom: 35px;
+		display: inline-block;
+		font-size: 16px;
+		line-height: calc(16 / 12);
+
+		a {
+			text-decoration: none;
+			color: var(--color-menu, #{$gray-666});
+		}
+
+		:hover {
+			--color-menu: #{$orange}
+		}
+
+		:last-child:before {
+			color: #{$gray-666};
+			content: "\2022";
+			font-size: 15px;
+			font-weight: 700;
+			line-height: 16px;
+			padding: 0 5px;
+			cursor: default;
+		}
+	}
+
+	&__h2 {
+		z-index: 1;
+		font-size: 36px;
+		line-height: calc(36 / 44);
+		color: $white;
+	}
+
+	&__historyText {
+		//padding-right: 21px;
+		padding-top: 13px !important;
+		text-align: left;
+		font-size: 20px;
+		line-height: calc(25.5 / 20);
+		margin-bottom: 26px;
+		color: $white;
+	}
+
+	&__btn {
+		@extend .catalog-btn;
+		font-size: 16px;
+		line-height: calc(25.5 / 20);
+		padding: 18px 48px !important;;
+		margin-bottom: 70px;
+
+	}
+
+	&__history {
+		z-index: 1;
+	}
+
+	&__h2banner {
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+		margin-bottom: rem(78);
+	}
+	&__ourBenefit {
+		margin-bottom: 60px;
+	}
+	&__cardBenefit {
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 318px;
+		height: 263px;
+
+		:first-child {
+			font-size: 59px;
+			line-height: calc(44 / 59);
+			text-align: center;
+			padding-bottom: 28px;
+
+		}
+
+		:last-child {
+			max-height: 40px;
+			height: 100%;
+			width: 100%;
+			font-size: 20px;
+			line-height: 1;
+			max-width: rem(200);
+			text-align: center;
+			vertical-align: top;
+		}
+	}
+	&__headline {
+		color: #{$headings-color};
+		font-size: 24px;
+		line-height: calc(34 / 24);
+	}
+	&__ourHistory {
+		margin-bottom: 19px;
+		font-size: 16px;
+		line-height: calc(20 / 16);
+	}
+	&__ulBox {
+		font-size: 16px;
+		line-height: calc(20 / 16);
+		margin-bottom: 65px;
+		max-width: 1170px;
+		list-style: none;
+
+	}
+
+	&__boxli {
+		list-style-type: none;
+		margin-bottom: 8px;
+		text-align: left;
+	}
+
+	&__boxli:before {
+		color: #{$gray-666};
+		content: "\2022";
+		font-size: 15px;
+		font-weight: 700;
+		line-height: 16px;
+		padding: 0 5px 0 0;
+		cursor: default;
+	}
+
+	&__headline {
+		font-size: 26px;
+		line-height: calc(34 / 26);
+		margin-bottom: 22px;
+		color: $headings-color;
+		max-width: 1190px;
+	}
+	.cardIcons {
+		margin-bottom: 82px;
+		--bs-gutter-x: 41px;
+	}
+
+	&__iconsBox {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: auto;
+
+		img {
+			margin-bottom: 9px;
+		}
+
+		span {
+			font-size: 20px;
+			line-height: calc(26 / 20);
+			text-align: center;
+			max-width: 159px;
+			max-height: 52px;
+		}
+	}
+
+	&__questionBar {
+		background-color: #{$gray-290};
+		padding: 38px 15px 50px 34px;
+		margin-bottom: 80px;
+		font-size: 16px;
+		line-height: calc(20 / 16);
+
+		a {
+			color: $blue;
+		}
+
+	}
+
+	&__form {
+		background-image: url("../img/@2x/aboutFormBack.png");
+		padding: 55px 70px 89px 70px;
+		margin-bottom: 50px;
+	}
+	&__formHeader{
+		font-size: 36px;
+		line-height: calc(44/36);
+		color: $white;
+		margin-bottom: 6px;
+	}
+	&__formText{
+		font-size: 16px;
+		line-height: calc(44/16);
+		color: $white;
+		margin-bottom: 29px;
+	}
+	&__formInputsBox{
+		display: flex;
+		justify-content: space-between;
+	}
+	&__formDataBox{
+		max-width: 408px;
+		width: 100%;
+	}
+	&__form1{
+		max-width: 781px;
+		max-height: 136px;
+		height: auto;
+		font-size: 16px;
+		line-height: calc(16/53);
+		text-transform: uppercase;
+	}
+	&__form2{
+		margin-bottom: 30px;
+		font-size: 16px;
+		line-height: calc(16/53);
+		text-transform: uppercase;
+	}
+	&__formFooter{
+		display: flex;
+		align-items: center;
+	}
+	&__formSecurity{
+		margin-left: 32px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		font-size: 14px;
+		line-height: calc(19.16/14);
+		color: $white;
+		padding-top: 4px;
+		a{
+			color: $white;
+		}
+	}
+	&__formBtn{
+		@extend .catalog-btn;
+		max-width: 408px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+	&__securityText{
+		margin: 0;
+	}
+	&__lock{
+		margin-right: 13px;
+	}
+	&__{}
+	&__{}
+	&__{}
+}
+
+//@media (min-width: 1430px) {
+//	.sAbout__row  .col {
+//		width: 14.285714285714285714285714285714%;
+//		*width: 14.285714285714285714285714285714%;
+//	}
+//}
