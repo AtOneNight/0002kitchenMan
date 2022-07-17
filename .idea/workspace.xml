@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d685bb29-9c07-464f-b217-0fa4dbe4ed44" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/0002KitchenMan.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/02.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/02.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sAbout/_sAbout.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sAbout/_sAbout.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sAbout/_sAbout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sAbout/_sAbout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sCooperation/_sCooperation.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sCooperation/_sCooperation.pug" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,10 +17,20 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Pug File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2Bw0K8WKmfPfm59zaBn6EqjHDO2" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -28,7 +40,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -68,6 +82,15 @@
       <updated>1657801775957</updated>
       <workItem from="1657801778231" duration="91000" />
       <workItem from="1657801882317" duration="90000" />
+      <workItem from="1657802009167" duration="343000" />
+      <workItem from="1657802734505" duration="515000" />
+      <workItem from="1657818903211" duration="424000" />
+      <workItem from="1657824448341" duration="5000" />
+      <workItem from="1657826398527" duration="3000" />
+      <workItem from="1657887218448" duration="3983000" />
+      <workItem from="1657912983866" duration="8000" />
+      <workItem from="1658061035199" duration="2689000" />
+      <workItem from="1658065095897" duration="3484000" />
     </task>
     <servers />
   </component>
@@ -96,5 +119,10 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

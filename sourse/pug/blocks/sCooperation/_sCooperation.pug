@@ -2,8 +2,13 @@ mixin sCooperation(data)
 	// start sCooperation
 	+b.SECTION.sCooperation.section#sCooperation&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 sCooperation
+			+b.section-title.text-left
+				h2 Сотрудничество
 				
 			.row
 	// end sCooperation
+mixin sCooperationCard(num, htext)
+	+e.card-box
+		img(src=`img/@2x/sCooperation${num}.png` alt="" loading="lazy")
+	+e.H3=htext
+	+e.P=

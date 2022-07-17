@@ -15,7 +15,7 @@ mixin sAbout(data)
 								br
 								| интернет-магазина. Наша история началась в 2009 году.
 							+e.btn(type="button") написать нам
-				+e.h2banner.d-xl-block(src="img/svg/h2banner.svg" alt="" loading="lazy")
+				+e.h2banner(src="img/svg/h2banner.svg" alt="" loading="lazy")
 				+e.ourBenefit.row
 					+ourBenefit(2009,"год основания компании","#DFD1CC","#3F3F3F")
 					+ourBenefit("1 200","наименований продукции","#717171","#FFFFFF")
@@ -45,7 +45,7 @@ mixin sAbout(data)
 					|	и мы обязательно отреагируем
 				+e.form
 					+e.formHeader Хотите связаться с нами и что-то предложить?
-					+e.P.formText Заполните форму обратной связи, напишите ваше мнение. Мы ответим вам на указанную почту111111111111111
+					+e.P.formText Заполните форму обратной связи, напишите ваше мнение. Мы ответим вам на указанную
 					+e.formInputsBox
 						+e.formDataBox
 							+e.INPUT.form2.form-control(type="text" placeholder="Ваше имя")
