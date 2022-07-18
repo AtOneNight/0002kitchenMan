@@ -17,73 +17,39 @@
 		left: 0;
 		top: 0;
 		z-index: -1;
-	}
-
-	&__MenuAbout {
-		z-index: 1;
-		margin-bottom: rem(35);
-		display: inline-block;
-		font-size: 16px;
-		line-height: calc(16 / 12);
-
-		a {
-			text-decoration: none;
-			color: var(--color-menu, #{$gray-666});
-		}
-
-		:hover {
-			--color-menu: #{$orange}
-		}
-
-		:last-child:before {
-			color: #{$gray-666};
-			content: "\2022";
-			font-size: 15px;
-			font-weight: 700;
-			line-height: 16px;
-			padding: 0 5px;
-			cursor: default;
+		img{
+			object-fit: cover;
 		}
 	}
-
-	&__h2 {
-		z-index: 1;
-		font-size: 36px;
-		line-height: calc(36 / 44);
-		color: $white;
-	}
-
 	&__historyText {
-		//padding-right: 21px;
 		padding-top: 13px !important;
 		text-align: left;
 		font-size: 20px;
 		line-height: calc(25.5 / 20);
-		margin-bottom: 26px;
+		margin-bottom: 27px;
 		color: $white;
+	}
+	&__header-box{
+		margin-bottom: 68px;
+		h2{
+			font-size: 36px;
+			line-height: calc(36 / 44);
+			color: $white;
+		}
 	}
 
 	&__btn {
-		@include media-breakpoint-down(xl) {
-			margin-left: 60px;
-		}
 		@extend .catalog-btn;
 		font-size: 16px;
 		line-height: calc(25.5 / 20);
 		padding: 18px 48px !important;;
-		margin-bottom: 70px;
-
 	}
-
-	&__history {
-		z-index: 1;
-	}
-
 	&__h2banner {
-		width: 100%;
-		height: auto;
-		object-fit: cover;
-		margin-bottom: rem(78);
+		margin-bottom: rem(80);
+		img{
+			width: 100%;
+			object-fit: cover;
+		}
 	}
 	&__ourBenefit {
 		@include media-breakpoint-down(xxl) {
@@ -98,19 +64,22 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		width: 318px;
-		height: 263px;
+		min-height: rem(263);
+		@include media-breakpoint-down(md){
+			min-height: rem(190);
+		}
 
-		:first-child {
+		span:first-child {
 			font-size: 59px;
 			line-height: calc(44 / 59);
 			text-align: center;
 			padding-bottom: 28px;
+			color: red;
 
 		}
 
-		:last-child {
-			max-height: 40px;
+		span:last-child {
+			min-height: 40px;
 			height: 100%;
 			width: 100%;
 			font-size: 20px;
@@ -122,71 +91,77 @@
 	}
 	&__headline {
 		color: #{$headings-color};
-		font-size: 24px;
-		line-height: calc(34 / 24);
-	}
-	&__ourHistory {
-		margin-bottom: 19px;
-		font-size: 16px;
-		line-height: calc(20 / 16);
-	}
-	&__ulBox {
-		font-size: 16px;
-		line-height: calc(20 / 16);
-		margin-bottom: 65px;
-		max-width: 1170px;
-		list-style: none;
-
-	}
-
-	&__boxli {
-		list-style-type: none;
-		margin-bottom: 8px;
-		text-align: left;
-	}
-
-	&__boxli:before {
-		color: #{$gray-666};
-		content: "\2022";
-		font-size: 15px;
-		font-weight: 700;
-		line-height: 16px;
-		padding: 0 5px 0 0;
-		cursor: default;
-	}
-
-	&__headline {
+		margin-bottom: 44px;
 		font-size: 26px;
 		line-height: calc(34 / 26);
-		margin-bottom: 22px;
-		color: $headings-color;
 		max-width: 1190px;
 	}
+	&__content {
+		h3{
+			font-size: 26px;
+			line-height: calc(34 / 26);
+			margin-bottom: 22px;
+			color: $headings-color;
+			max-width: 1190px;
+		}
+		p{
+			margin-bottom: 19px;
+			font-size: 16px;
+			line-height: calc(20 / 16);
+		}
+		ul{
+			font-size: 16px;
+			line-height: calc(20 / 16);
+			margin-bottom: 65px;
+			max-width: 1170px;
+			list-style: none;
+		}
+		li{
+			margin-bottom: 8px;
+			list-style: inherit;
+		}
+		li:before{
+			color: #{$gray-666};
+			content: "\2022";
+			font-size: 15px;
+			font-weight: 700;
+			line-height: 16px;
+			padding: 0 5px 0 0;
+			cursor: default;
+		}
+	}
 	.cardIcons {
-		margin-bottom: 82px;
-		--bs-gutter-x: 41px;
+		margin-bottom: 61px;
+	}
+	&__icon-col{
+		@include media-breakpoint-up(xl){
+			width: calc(100%/7)!important;
+		}
+
 	}
 
 	&__iconsBox {
+		font-size: 20px;
+		line-height: calc(26/20);
+	}
+	&__icon-box{
+		height: 44px;
+		width: 44px;
 		display: flex;
-		flex-direction: column;
-		justify-content: center;
 		align-items: center;
-		height: auto;
-
-		img {
+		justify-content: center;
+		@include media-breakpoint-up(md){
+			width: 100%;
 			margin-bottom: 9px;
 		}
-
-		span {
-			font-size: 20px;
-			line-height: calc(26 / 20);
-			text-align: center;
-			max-width: 159px;
-			max-height: 52px;
+		img{
+			width: auto;
+			height: auto;
+			max-height: 100%;
+			max-width: 100%;
 		}
-	}
 
+	}
 	&__questionBar {
 		background-color: #{$gray-290};
 		padding: 38px 15px 50px 34px;
@@ -201,50 +176,39 @@
 	}
 
 	&__form {
+
 		background-image: url("../img/@2x/aboutFormBack.png");
 		padding: 55px 70px 89px 70px;
 		margin-bottom: 50px;
-	}
-	&__formHeader{
-		@include media-breakpoint-down(lg) {
-			font-size: 27px;
+		@include media-breakpoint-down(xl){
+			padding: 45px 40px 70px 40px;
 		}
-		font-size: 36px;
-		line-height: calc(44/36);
-		color: $white;
-		margin-bottom: 6px;
-	}
-	&__formText{
-		@include media-breakpoint-down(lg) {
-			font-size: 13px;
+		@include media-breakpoint-down(md){
+			left: calc(-50vw - -50%);
+			position: relative;
+			width: 100vw;
+			z-index: 1;
+			padding: 26px 26px 39px 26px;
 		}
-		font-size: 16px;
-		line-height: calc(44/16);
-		color: $white;
-		margin-bottom: 29px;
 	}
 	&__formInputsBox{
-		@include media-breakpoint-down(md) {
-			display: flex;
-			flex-direction: column;
+		@include media-breakpoint-down(lg){
+			flex-direction:column ;
 		}
 		display: flex;
 		justify-content: space-between;
 	}
 	&__formDataBox{
-		@include media-breakpoint-down(md) {
-			margin-bottom: 30px;
-			max-width: 355px;
-			max-height: 126px;
+		@include media-breakpoint-down(md){
+			max-width: 691px;
 		}
-		@include media-breakpoint-down(lg) {
-			max-width: 258px;
-			width: 100%;
+		@include media-breakpoint-down(lg){
+			max-width: 610px;
 		}
-		@include media-breakpoint-down(xl) {
-			max-width: 258px;
-			width: 100%;
+		@include media-breakpoint-down(xl){
+			max-width: 408px;
 		}
+
 		@include media-breakpoint-down(xxl) {
 			max-width: 308px;
 			width: 100%;
@@ -253,20 +217,17 @@
 		width: 100%;
 	}
 	&__form1{
-		@include media-breakpoint-down(md) {
-			font-size: 15px;
+		@include media-breakpoint-down(md){
+			max-width: 691px;
+		}
+
+		@include media-breakpoint-down(lg){
+			max-width: 610px;
+			min-height: 130px !important;
 			margin-bottom: 30px;
-			max-width: 355px;
-			max-height: 126px;
 		}
-		@include media-breakpoint-down(lg) {
-			font-size: 15px;
-			max-width: 258px;
-			max-height: 136px;
-		}
-		@include media-breakpoint-down(xl) {
-			max-width: 481px;
-			max-height: 136px;
+		@include media-breakpoint-down(xl){
+			max-width: rem(412) ;
 		}
 		@include media-breakpoint-down(xxl) {
 			max-width: 581px;
@@ -280,44 +241,37 @@
 		text-transform: uppercase;
 	}
 	&__form2{
-		@include media-breakpoint-down(lg) {
-			&__form2 {
-				font-size: 15px;
-			}
-		}
 		margin-bottom: 30px;
 		font-size: 16px;
 		line-height: calc(16/53);
 		text-transform: uppercase;
 	}
 	&__formFooter{
-		@include media-breakpoint-down(sm) {
+		@include media-breakpoint-down(md	) {
 			align-items: flex-start;
-			max-width: 403px;
 		}
-		@include media-breakpoint-down(md) {
+		@include media-breakpoint-down(lg) {
 			flex-direction: column;
 		}
 		display: flex;
 		align-items: center;
+
 	}
 	&__formSecurity{
-		@include media-breakpoint-down(md) {
+		@include media-breakpoint-down(md){
+			min-width: 691px;
+			margin-left: 15px;
+		}
+		@include media-breakpoint-down(lg){
+			min-width: 610px;
 			margin-left: 0;
-			font-size: 10px;
+			justify-content: start;
 		}
-		@include media-breakpoint-down(lg) {
-			&__formSecurity {
-				margin-left: 50px;
-				font-size: 11px;
-				a{
-					color: $white;
-				}
-			}
+		@include media-breakpoint-down(xl){
+			max-width: 412px;
+			margin-left: 32px;
 		}
-		@include media-breakpoint-down(xl) {
-			margin-left: 50px;
-		}
+
 		@include media-breakpoint-down(xxl) {
 			margin-left: 80px;
 		}
@@ -334,19 +288,16 @@
 		}
 	}
 	&__formBtn{
-		@include media-breakpoint-down(md) {
-			max-width: 355px;
-			width: 100%;
-			padding: 13px 0;
+		@include media-breakpoint-down(md){
+			max-width: 691px;
+		}
+		@include media-breakpoint-down(lg){
+			max-width: 610px;
 			margin-bottom: 30px;
+			min-height: 53px;
 		}
-		@include media-breakpoint-down(lg) {
-			max-width: 258px;
-			width: 100%;
-		}
-		@include media-breakpoint-down(xl) {
-			max-width: 258px;
-			width: 100%;
+		@include media-breakpoint-down(xl){
+			max-width: 408px;
 		}
 		@include media-breakpoint-down(xxl) {
 			max-width: 308px;
@@ -368,5 +319,23 @@
 	&__{}
 	&__{}
 	&__{}
+}
+.section-title{
+	h2{
+		font-size: 36px;
+		line-height: calc(44/36);
+		color: $white;
+		margin-bottom: 6px;
+	}
+	p{
+		@include media-breakpoint-down(lg){
+			line-height: 1.25;
+		}
+		font-size: 16px;
+		line-height: calc(44/16);
+		color: $white;
+		margin-bottom: 29px;
+	}
+
 }
 

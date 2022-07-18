@@ -7,7 +7,7 @@
       <change beforePath="$PROJECT_DIR$/public/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sAbout/_sAbout.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sAbout/_sAbout.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sAbout/_sAbout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sAbout/_sAbout.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sCooperation/_sCooperation.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sCooperation/_sCooperation.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/sass/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/_base.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +90,10 @@
       <workItem from="1657887218448" duration="3983000" />
       <workItem from="1657912983866" duration="8000" />
       <workItem from="1658061035199" duration="2689000" />
-      <workItem from="1658065095897" duration="3484000" />
+      <workItem from="1658065095897" duration="7656000" />
+      <workItem from="1658091948049" duration="5000" />
+      <workItem from="1658102564753" duration="634000" />
+      <workItem from="1658143400200" duration="7744000" />
     </task>
     <servers />
   </component>
