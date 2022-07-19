@@ -65,9 +65,9 @@
 		align-items: center;
 		justify-content: center;
 		min-height: rem(263);
-		@include media-breakpoint-down(md){
-			min-height: rem(190);
-		}
+		//@include media-breakpoint-down(md){
+		//	min-height: rem(190);
+		//}
 
 		span:first-child {
 			font-size: 59px;
