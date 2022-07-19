@@ -42,8 +42,6 @@ mixin bemto_custom_tag(customTag, tagMetadata)
       +bemto_custom_inline_tag(customTag)&attributes(attributes): block
     when 'self_closing'
       +bemto_custom_inline_tag(customTag, true)&attributes(attributes)
-
-    //- Block-level tags
     default
       if selfClosing
         #{customTag}&attributes(attributes)()/
