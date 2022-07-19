@@ -26,11 +26,11 @@
 		text-align: left;
 		font-size: 20px;
 		line-height: calc(25.5 / 20);
-		margin-bottom: 27px;
+		margin-bottom: rem(27);
 		color: $white;
 	}
 	&__header-box{
-		margin-bottom: 68px;
+		margin-bottom: rem(68);
 		h2{
 			font-size: 36px;
 			line-height: calc(36 / 44);
@@ -42,7 +42,7 @@
 		@extend .catalog-btn;
 		font-size: 16px;
 		line-height: calc(25.5 / 20);
-		padding: 18px 48px !important;;
+		padding: rem(18) rem(48) !important;;
 	}
 	&__h2banner {
 		margin-bottom: rem(80);
@@ -56,7 +56,7 @@
 			--bs-gutter-y: 30px;
 			--bs-gutter-x: 30px;
 		}
-		margin-bottom: 60px;
+		margin-bottom: rem(60);
 	}
 	&__cardBenefit {
 		margin: auto;
@@ -65,21 +65,18 @@
 		align-items: center;
 		justify-content: center;
 		min-height: rem(263);
-		//@include media-breakpoint-down(md){
-		//	min-height: rem(190);
-		//}
 
 		span:first-child {
 			font-size: 59px;
 			line-height: calc(44 / 59);
 			text-align: center;
-			padding-bottom: 28px;
+			padding-bottom: rem(28);
 			color: red;
 
 		}
 
 		span:last-child {
-			min-height: 40px;
+			min-height: rem(40);
 			height: 100%;
 			width: 100%;
 			font-size: 20px;
@@ -91,10 +88,10 @@
 	}
 	&__headline {
 		color: #{$headings-color};
-		margin-bottom: 44px;
-		font-size: 26px;
+		margin-bottom: rem(44);
+		font-size: rem(26);
 		line-height: calc(34 / 26);
-		max-width: 1190px;
+		max-width: rem(1190);
 	}
 	&__content {
 		h3{
@@ -102,7 +99,7 @@
 			line-height: calc(34 / 26);
 			margin-bottom: 22px;
 			color: $headings-color;
-			max-width: 1190px;
+			max-width: rem(1190);
 		}
 		p{
 			margin-bottom: 19px;
@@ -113,11 +110,11 @@
 			font-size: 16px;
 			line-height: calc(20 / 16);
 			margin-bottom: 65px;
-			max-width: 1170px;
+			max-width: rem(1170);
 			list-style: none;
 		}
 		li{
-			margin-bottom: 8px;
+			margin-bottom: rem(8);
 			list-style: inherit;
 		}
 		li:before{
@@ -131,7 +128,7 @@
 		}
 	}
 	.cardIcons {
-		margin-bottom: 61px;
+		margin-bottom: rem(61);
 	}
 	&__icon-col{
 		@include media-breakpoint-up(xl){
@@ -145,14 +142,14 @@
 		line-height: calc(26/20);
 	}
 	&__icon-box{
-		height: 44px;
-		width: 44px;
+		height: rem(44px);
+		width: rem(44);
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		@include media-breakpoint-up(md){
 			width: 100%;
-			margin-bottom: 9px;
+			margin-bottom: rem(9);
 		}
 		img{
 			width: auto;
@@ -164,8 +161,8 @@
 	}
 	&__questionBar {
 		background-color: #{$gray-290};
-		padding: 38px 15px 50px 34px;
-		margin-bottom: 80px;
+		padding: rem(38) rem(15) rem(50) rem(34);
+		margin-bottom: rem(80);
 		font-size: 16px;
 		line-height: calc(20 / 16);
 
@@ -178,17 +175,17 @@
 	&__form {
 
 		background-image: url("../img/@2x/aboutFormBack.png");
-		padding: 55px 70px 89px 70px;
+		padding: rem(55) rem(70) rem(89) rem(70);
 		margin-bottom: 50px;
 		@include media-breakpoint-down(xl){
-			padding: 45px 40px 70px 40px;
+			padding: rem(45) rem(40) rem(70) rem(40);
 		}
 		@include media-breakpoint-down(md){
 			left: calc(-50vw - -50%);
 			position: relative;
 			width: 100vw;
 			z-index: 1;
-			padding: 26px 26px 39px 26px;
+			padding: rem(26) rem(26) rem(39) rem(26);
 		}
 	}
 	&__formInputsBox{
@@ -200,48 +197,48 @@
 	}
 	&__formDataBox{
 		@include media-breakpoint-down(md){
-			max-width: 691px;
+			max-width: rem(691);
 		}
 		@include media-breakpoint-down(lg){
-			max-width: 610px;
+			max-width: rem(610);
 		}
 		@include media-breakpoint-down(xl){
-			max-width: 408px;
+			max-width: rem(408);
 		}
 
 		@include media-breakpoint-down(xxl) {
-			max-width: 308px;
+			max-width: rem(308);
 			width: 100%;
 		}
-		max-width: 408px;
+		max-width: rem(408);
 		width: 100%;
 	}
 	&__form1{
 		@include media-breakpoint-down(md){
-			max-width: 691px;
+			max-width: rem(691);
 		}
 
 		@include media-breakpoint-down(lg){
-			max-width: 610px;
-			min-height: 130px !important;
-			margin-bottom: 30px;
+			max-width: rem(610);
+			min-height: rem(130) !important;
+			margin-bottom: rem(30);
 		}
 		@include media-breakpoint-down(xl){
 			max-width: rem(412) ;
 		}
 		@include media-breakpoint-down(xxl) {
-			max-width: 581px;
-			max-height: 136px;
+			max-width: rem(581);
+			max-height: rem(136);
 		}
-		max-width: 781px;
-		max-height: 136px;
+		max-width: rem(781);
+		max-height: rem(136);
 		height: auto;
 		font-size: 16px;
 		line-height: calc(16/53);
 		text-transform: uppercase;
 	}
 	&__form2{
-		margin-bottom: 30px;
+		margin-bottom: rem(30);
 		font-size: 16px;
 		line-height: calc(16/53);
 		text-transform: uppercase;
@@ -259,23 +256,23 @@
 	}
 	&__formSecurity{
 		@include media-breakpoint-down(md){
-			min-width: 691px;
-			margin-left: 15px;
+			min-width: rem(691);
+			margin-left: rem(15);
 		}
 		@include media-breakpoint-down(lg){
-			min-width: 610px;
+			min-width: rem(610);
 			margin-left: 0;
 			justify-content: start;
 		}
 		@include media-breakpoint-down(xl){
-			max-width: 412px;
-			margin-left: 32px;
+			max-width: rem(412);
+			margin-left: rem(32);
 		}
 
 		@include media-breakpoint-down(xxl) {
-			margin-left: 80px;
+			margin-left: rem(80);
 		}
-		margin-left: 32px;
+		margin-left: rem(32);
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -289,22 +286,22 @@
 	}
 	&__formBtn{
 		@include media-breakpoint-down(md){
-			max-width: 691px;
+			max-width: rem(691);
 		}
 		@include media-breakpoint-down(lg){
-			max-width: 610px;
-			margin-bottom: 30px;
-			min-height: 53px;
+			max-width: rem(610);
+			margin-bottom: rem(30);
+			min-height: rem(53);
 		}
 		@include media-breakpoint-down(xl){
-			max-width: 408px;
+			max-width: rem(408);
 		}
 		@include media-breakpoint-down(xxl) {
-			max-width: 308px;
+			max-width: rem(308);
 			width: 100%;
 		}
 		@extend .catalog-btn;
-		max-width: 408px;
+		max-width: rem(408);
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -314,7 +311,7 @@
 		margin: 0;
 	}
 	&__lock{
-		margin-right: 13px;
+		margin-right: rem(13);
 	}
 	&__{}
 	&__{}
@@ -325,7 +322,7 @@
 		font-size: 36px;
 		line-height: calc(44/36);
 		color: $white;
-		margin-bottom: 6px;
+		margin-bottom: rem(6);
 	}
 	p{
 		@include media-breakpoint-down(lg){
@@ -334,7 +331,7 @@
 		font-size: 16px;
 		line-height: calc(44/16);
 		color: $white;
-		margin-bottom: 29px;
+		margin-bottom: rem(29);
 	}
 
 }

@@ -5,7 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/03.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/03.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/_assets/bemto/lib/bemto_custom_tag.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/_assets/bemto/lib/bemto_custom_tag.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sAbout/_sAbout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sAbout/_sAbout.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sCooperation/_sCooperation.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sCooperation/_sCooperation.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sCooperation/_sCooperation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sCooperation/_sCooperation.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sourse/sass/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/_base.scss" afterDir="false" />
@@ -96,7 +96,9 @@
       <workItem from="1658102564753" duration="634000" />
       <workItem from="1658143400200" duration="8785000" />
       <workItem from="1658160837533" duration="27000" />
-      <workItem from="1658224601989" duration="7133000" />
+      <workItem from="1658224601989" duration="7735000" />
+      <workItem from="1658259381622" duration="159000" />
+      <workItem from="1658261549501" duration="5664000" />
     </task>
     <servers />
   </component>
