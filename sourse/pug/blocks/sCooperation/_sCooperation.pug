@@ -14,15 +14,22 @@ mixin sCooperation(data)
 			+e.form.form-control
 				+b.section-title
 					h2 Хотите сотрудничать с нами?
-				p Заполните форму обратной связи, мы перезвоним вам и поговорим о сотрудничестве
+				+e.P.form-p Заполните форму обратной связи, мы перезвоним вам и поговорим о сотрудничестве
 				+e.inputs-box-row
 					+e.INPUT.coop-form-input.form-control(type="text" placeholder="Ваше имя")
 					+e.INPUT.coop-form-input.form-control(type="text" placeholder="Ваш телефон")
 					+e.btn.btn-primary(type="button") написать нам
+				+e.formSecurity
+					+e.lock
+						img(src="img/svg/sAboutlock.svg" alt="" loading="lazy")
+					+e.P.securityText Мы безопасно храним данные и никому их не передаём, вот
+						|
+						|
+						a(href="#") условия.
 	// end sCooperation
 mixin sCooperationCard(num, htext,ptext)
 	+e.coop-card.col-12.col-xxl-6
-		+e.coop-img-box.text-center
+		+e.coop-ci-box.text-center
 			img(src=`img/@2x/sCooperation${num}.png` alt="" loading="lazy")
 		+e.coop-txt-box
 			+b.section-title
