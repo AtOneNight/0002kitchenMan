@@ -42,24 +42,6 @@ mixin sAbout(data)
 				a(href="#") shop@kitchenmania.ru
 				|
 				|	и мы обязательно отреагируем
-			+e.form
-				+b.section-title
-					h2.formHeader Хотите связаться с нами и что-то предложить?
-					p.formText Заполните форму обратной связи, напишите ваше мнение. Мы ответим вам на указанную почту
-				+e.formInputsBox
-					+e.formDataBox
-						+e.INPUT.form2.form-control(type="text" placeholder="Ваше имя")
-						+e.INPUT.form2.form-control(type="text" placeholder="Ваша электронная почта")
-					+e.TEXTAREA.form1.form-control(type="text" placeholder="Ваш комментарий")
-				+e.formFooter
-					+e.formBtn(type="button") написать нам
-					+e.formSecurity
-						+e.lock
-							img(src="img/svg/sAboutlock.svg" alt="" loading="lazy")
-						+e.P.securityText Мы безопасно храним данные и никому их не передаём, вот
-							|
-							|
-							a(href="#") условия.
 
 
 
