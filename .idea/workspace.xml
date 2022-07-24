@@ -3,19 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d685bb29-9c07-464f-b217-0fa4dbe4ed44" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/02.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/02.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/03.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/03.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/@1x/sCooperation0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/@1x/webp/sCooperation0.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/@2x/sCooperation0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/@2x/webp/sCooperation0.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sAbout/_sAbout.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sAbout/_sAbout.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sAbout/_sAbout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sAbout/_sAbout.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sCooperation/_sCooperation.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sCooperation/_sCooperation.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/pages/02.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/pages/02.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/pages/03.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/pages/03.pug" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +107,9 @@
       <workItem from="1658434301986" duration="1592000" />
       <workItem from="1658440191987" duration="593000" />
       <workItem from="1658554001562" duration="129000" />
-      <workItem from="1658556670204" duration="1904000" />
+      <workItem from="1658556670204" duration="1970000" />
+      <workItem from="1658571178772" duration="3000" />
+      <workItem from="1658686924574" duration="6000" />
     </task>
     <servers />
   </component>
