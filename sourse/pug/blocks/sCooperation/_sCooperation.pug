@@ -13,10 +13,9 @@ mixin sCooperation(data)
 				+sCooperationCard(4,"Кухонные салоны","Для кухонных салонов мы разработали специальные условия по сотрудничеству: огромный ассортимент и официальная техника от крупнейших поставщиков, программа полного сервиса и отличные цены, всё то, что необходимо для наполнения кухни и дома клиента бытовой техникой!")
 	// end sCooperation
 mixin sCooperationCard(num, htext,ptext)
-	+e.coop-card.col-12.col-xxl-6
-		+e.coop-ci-box.text-center
+	.col-md-6.col-12
+		+e.coop-ci-box
 			img(src=`img/@2x/sCooperation${num}.png` alt="" loading="lazy")
 		+e.coop-txt-box
-			+b.section-title
-				h3=htext
+			h3=htext
 			+e.P.coop-txt=ptext

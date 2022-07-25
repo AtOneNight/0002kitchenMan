@@ -1,126 +1,34 @@
 // start .sCooperation
 .sCooperation {
-		// --sPT: ;
-		// --sPB: ;
-		// --sTPB: ;
-
-	@include media-breakpoint-up(xl) {}
-	@include media-breakpoint-up(lg) {}
-	@include media-breakpoint-up(md) {}
-	@include media-breakpoint-up(sm) {}
-	@include media-breakpoint-between(md, xl) {}
-	@include media-breakpoint-only(xl) {}
-	@include media-breakpoint-down(xl) {}
 	.breadcrumb{
-		margin-bottom: 32px;
+		margin-bottom: rem(32);
 	}
 	&__coop-title{
-		margin-bottom: 18px;
+		margin-bottom: rem(18);
 	}
 	.section-title{
 		h2{
 			color: $black;
 		}
 	}
-	&__cards-row{
-		margin-bottom: 70px;
-	}
-	&__coop-card{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+	&__cards-row {
+		margin-bottom: rem(70);
 	}
 	&__coop-ci-box{
-		max-width: 665px;
 		img{
 			object-fit: cover;
 			width: 100%;
 		}
-		margin-bottom: 30px;
+		margin-bottom: rem(30);
 	}
 	&__coop-txt-box{
 		h3{
-			font-size: 26px;
+			font-size: rem(26);
 			line-height: calc(34/26);
+			padding-bottom: rem(10);
 		}
-		max-width: 665px;
 		text-align: start;
-		font-size: 16px;
+		font-size: rem(16);
 		line-height: calc(26.5/16);
-		.section-title{
-			padding-bottom: 10px;
-		}
-	}
-	&__coop-card-row{
-		--bg-gutter-y: 45px;
-	}
-	&__form{
-		background-image: url("../img/@2x/sCooperationFormBg.png");
-		padding: rem(55) rem(70) rem(74) rem(70);
-		margin-bottom: 50px;
-		.section-title{
-			h2{
-				color: $white ;
-			}
-			padding-bottom: 5px;
-		}
-	}
-	&__form-p{
-		color: $white;
-		font-size: 16px;
-		line-height: calc(44/16);
-		margin-bottom: 27px;
-	}
-	&__inputs-box-row{
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		margin-bottom: 20px;
-	}
-	&__coop-form-input{
-		max-width: 408px;
-		font-size: 16px;
-		text-transform: uppercase;
-	}
-	&__btn{
-		@extend .catalog-btn;
-		max-width: 343px;
-		padding: 14.5px 110px !important;
-	}
-	&__formSecurity{
-		@include media-breakpoint-down(md){
-			min-width: rem(691);
-		}
-		@include media-breakpoint-down(lg){
-			min-width: rem(610);
-			margin-left: 0;
-			justify-content: start;
-		}
-		@include media-breakpoint-down(xl){
-			max-width: rem(412);
-			margin-left: rem(32);
-		}
-
-		@include media-breakpoint-down(xxl) {
-			margin-left: rem(80);
-		}
-		display: flex;
-		align-items: center;
-		font-size: 14px;
-		line-height: calc(19.16/14);
-		color: $white;
-		padding-top: 4px;
-		a{
-			color: $white;
-		}
-	}
-	&__lock{
-		margin-left: 3px;
-	}
-	&__securityText{
-		margin: 0 0 0 12px;
-		font-size: 14px;
-		line-height: calc(19.16/14) ;
-		font-weight: 300;
 	}
 } // end.sCooperation
