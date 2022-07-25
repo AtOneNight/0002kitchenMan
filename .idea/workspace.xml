@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d685bb29-9c07-464f-b217-0fa4dbe4ed44" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/03.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/03.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sAbout/_sAbout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sAbout/_sAbout.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sCooperation/_sCooperation.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sCooperation/_sCooperation.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sCooperation/_sCooperation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sCooperation/_sCooperation.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/footer/_footer.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/footer/_footer.pug" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +112,8 @@
       <workItem from="1658571178772" duration="3000" />
       <workItem from="1658686924574" duration="6000" />
       <workItem from="1658687759420" duration="3480000" />
-      <workItem from="1658744294377" duration="2160000" />
+      <workItem from="1658744294377" duration="2829000" />
+      <workItem from="1658790637011" duration="346000" />
     </task>
     <servers />
   </component>
