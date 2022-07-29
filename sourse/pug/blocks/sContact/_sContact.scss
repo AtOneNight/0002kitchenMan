@@ -1,29 +1,72 @@
 
 	// start .sContact
-	.sContact {
-		 
-	@include media-breakpoint-up(xl) {}
-	@include media-breakpoint-up(lg) {}
-	@include media-breakpoint-up(md) {}
-	@include media-breakpoint-up(sm) {}
-	@include media-breakpoint-up(xs) {}
-	
-	//
-	@include media-breakpoint-between(md, xl) { }
-	
-	
-	//
-	@include media-breakpoint-only(xs) {}
-	@include media-breakpoint-only(sm) {}
-	@include media-breakpoint-only(md) {}
-	@include media-breakpoint-only(lg) {}
-	@include media-breakpoint-only(xl) {}
-	
-	//
-	@include media-breakpoint-down(xl) {}
-	@include media-breakpoint-down(lg) {}
-	@include media-breakpoint-down(md) {}
-	@include media-breakpoint-down(sm) {}
-	@include media-breakpoint-down(xs) {} 
+.sContact {
+	--sPT: 0px;
+	.breadcrumb{
+		margin-bottom: 30px;
+	}
+	.section-title{
+		padding-bottom: 33px;
+		h2 {
+			font-size: 36px;
+			line-height: calc(44/36);
+		}
+	}
+	&__box{
+		padding-top: 45px;
+	}
+	&__img-box{
+		img{
+			object-fit: cover;
+			width: 100%;
+		}
+	}
+	&__cbox{
+		margin-bottom: 25px;
+	}
+	&__cbox--adress{
+		p{
+			margin-bottom: 2px;
+		}
+		a{
+			display: block;
+			text-decoration: none;
+			font-size: 14px;
+			line-height: calc(26.5/14);
+		}
+		a:after{
+			content: "🠒";
+			margin-left: 10px;
+		}
+	}
+	&__cbox--tel{
+		p{
+			font-size: 16px;
+			line-height: calc(26.5/16);
+			margin-bottom: 3px;
+		}
+		margin-bottom: 32px;
+	}
+	&__cbox--mail{
+		a {
+			color: $blue ;
+		}
+	}
+	&__box-header{
+		font-size: 16px;
+		line-height: calc(26.5/16);
+		font-weight: 600;
+		margin-bottom: 1px;
+	}
+	&__box-header--legal{
+		margin-bottom: 2px;
+	}
+	&__cbox--legal{
+		p{
+			font-size: 16px;
+			line-height: calc(26.5/16);
+			margin-bottom: 3px;
+		}
+	}
 
 } // end.sContact

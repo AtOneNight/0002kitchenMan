@@ -1,9 +1,44 @@
 mixin sContact()
 	// start sContact
 	+b.SECTION.sContact.section#sContact&attributes(attributes)
-		.container
-			+b.section-title.text-center
-				h2 sContact
-				
-			.row
+		.row
+			.col-6
+				+e.img-box
+					img(src='img/@2x/Map-img.png')
+			.col-6
+				+e.box
+					+breadcrumb("Главная","Контакты")
+					.section-title
+						h2 Контакты
+					+e.cbox--adress
+						+e.P.box-header--adress Адрес:
+						p г. Москва, ул.Складочная д.1, стр. 9
+						a(href='#') Схема проезда от станции метро Дмитровская
+						a(href='#') Схема проезда от станции метро Савеловская
+					+e.cbox--tel
+						+e.P.box-header--tel Телефоны:
+						p Россия +7 (800) 775-82-72
+						| Москва +7 (495) 775-82-72
+						br
+						| Для оптовых покупателей +7 (495) 775-82-72
+					+e.cbox--mail
+						+e.P.box-header--mail Электронная почта:
+						a(href="mailto:shop@kitchenmania.ru") shop@kitchenmania.ru
+					+e.cbox--legal
+						+e.P.box-header--legal Юридические реквизиты:
+							p ООО «ТД АРХЕОН»
+							| ИНН 7751175159
+							br
+							| КПП 775101001
+							br
+							| ОГРН 1207700005897
+							br
+							| 08850 г. Москва, поселение Внуковское, ул. Авиаконструктора Петлякова, д. 9,  
+							br
+							| пом.3, офис 11
+					+e.cbox--word
+						img(src="img/svg/word.svg")
+						a(href="#") СКАЧАТЬ РЕКВИЗИТЫ
+
+
 	// end sContact
