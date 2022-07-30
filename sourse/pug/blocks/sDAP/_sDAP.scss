@@ -1,6 +1,9 @@
 // start .sDAP
 .sDAP {
 	--sPB:0PX;
+	.breadcrumb{
+		margin-bottom: 31px;
+	}
 	.section-title{
 		padding-bottom: 40px;
 		h2 {
@@ -18,6 +21,10 @@
 		line-height: calc(34/20);
 		margin-bottom: 5px;
 	}
+	h5{
+		font-size: 16px;
+		line-height: calc(26.5/16);
+	}
 	p{
 		font-size: 16px;
 		line-height: calc(22/16);
@@ -32,8 +39,8 @@
 	}
 	&__btn--second{
 		background-color: #{$gray-280} !important;
-		color: #{$body-color} !important;
-		margin-left: 20px;
+		color: #{$black} !important;
+		margin-left: 16px;
 	}
 	&__img-box{
 		img{
@@ -45,17 +52,27 @@
 		font-size: 20px !important;
 		line-height: calc(25.5/20) !important;
 		margin-bottom: 40px;
+		a{
+			color: $blue;
+			margin-left: 5px;
+		}
 	}
 	&__first-row{
-		margin-bottom: 50px;
+		margin-bottom: 13px;
+		p{
+			margin-bottom: 15px;
+		}
 	}
 	&__deliver-box{
 		border: 1px solid #E6E6E6;
 		padding: 20px 0 33px 36px;
 		margin-bottom: 30px;
 	}
+	&__double-p{
+		min-height: 44px;
+	}
 	&__third-row{
-		margin-bottom: 50px;
+		margin-bottom: 55px;
 		a {
 			display: block;
 			text-decoration: none;
@@ -63,10 +80,26 @@
 			line-height: calc(26.5 / 14);
 		}
 	}
-	&__double-p{
-		min-height: 44px;
+	&__header-box{
+		padding: 0 45px 0 0;
+		margin-bottom: 20px;
+		h4{
+			padding-top: 34px;
+		}
 	}
 	&__del-company{
 		margin-bottom: 31px;
 	}
+	&__box-href{
+		margin-bottom: 17px;
+	}
+	&__box-adress{
+		h5{
+			margin-bottom: 5px;
+		}
+		p{
+			margin-bottom: 11px;
+		}
+	}
+
 } // end.sDAP
