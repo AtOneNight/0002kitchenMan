@@ -2,10 +2,7 @@ mixin sContact()
 	// start sContact
 	+b.SECTION.sContact.section#sContact&attributes(attributes)
 		.row
-			.col-6
-				+e.img-box
-					img(src='img/@2x/Map-img.png')
-			.col-6
+			.col-lg-6.col-12.order-lg-2
 				+e.box
 					+breadcrumb("Главная","Контакты")
 					.section-title
@@ -27,18 +24,17 @@ mixin sContact()
 					+e.cbox--legal
 						+e.P.box-header--legal Юридические реквизиты:
 							p ООО «ТД АРХЕОН»
-							| ИНН 7751175159
-							br
-							| КПП 775101001
-							br
-							| ОГРН 1207700005897
-							br
-							| 08850 г. Москва, поселение Внуковское, ул. Авиаконструктора Петлякова, д. 9,  
-							br
-							| пом.3, офис 11
+							P ИНН 7751175159
+							P КПП 775101001
+							P ОГРН 1207700005897
+							P 108850 г. Москва, поселение Внуковское, ул. Авиаконструктора Петлякова, д. 9,  
+							P пом.3, офис 11
 					+e.cbox--word
 						img(src="img/svg/word.svg")
 						a(href="#") СКАЧАТЬ РЕКВИЗИТЫ
+			.col-lg-6.col-12.order-lg-1.text-center
+				+e.img-box
+					img(src='img/@2x/mapContact1.png' data-fancybox)
 
 
 	// end sContact
