@@ -1,0 +1,72 @@
+// start .sDAP
+.sDAP {
+	--sPB:0PX;
+	.section-title{
+		padding-bottom: 40px;
+		h2 {
+			font-size:36px ;
+			line-height: calc(44/36);
+		}
+	}
+	h3{
+		font-size: 26px;
+		line-height: calc(34/26);
+		margin-bottom: 10px;
+	}
+	h4{
+		font-size: 20px;
+		line-height: calc(34/20);
+		margin-bottom: 5px;
+	}
+	p{
+		font-size: 16px;
+		line-height: calc(22/16);
+	}
+	&__btn{
+		@extend .catalog-btn;
+		text-transform:none !important;
+		padding: 6px 20px 6px 20px !important;
+		font-size: 20px !important;
+		line-height: calc(44/20) !important;
+		margin-bottom: 35px;
+	}
+	&__btn--second{
+		background-color: #{$gray-280} !important;
+		color: #{$body-color} !important;
+		margin-left: 20px;
+	}
+	&__img-box{
+		img{
+			object-fit: cover;
+			width: 100%;
+		}
+	}
+	&__header-p{
+		font-size: 20px !important;
+		line-height: calc(25.5/20) !important;
+		margin-bottom: 40px;
+	}
+	&__first-row{
+		margin-bottom: 50px;
+	}
+	&__deliver-box{
+		border: 1px solid #E6E6E6;
+		padding: 20px 0 33px 36px;
+		margin-bottom: 30px;
+	}
+	&__third-row{
+		margin-bottom: 50px;
+		a {
+			display: block;
+			text-decoration: none;
+			font-size: 14px;
+			line-height: calc(26.5 / 14);
+		}
+	}
+	&__double-p{
+		min-height: 44px;
+	}
+	&__del-company{
+		margin-bottom: 31px;
+	}
+} // end.sDAP
