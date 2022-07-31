@@ -26,6 +26,9 @@
 		}
 	}
 	&__img-box{
+		@include media-breakpoint-up(lg){
+			text-align: start;
+		}
 		img{
 			object-fit: cover;
 			width: 100%;
