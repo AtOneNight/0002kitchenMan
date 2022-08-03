@@ -2,27 +2,27 @@
 	// start .sContact
 .sContact {
 	--sPT: 0px;
-	--sPB:0px;
+	--sPB: 0px;
 	.breadcrumb{
-		margin-bottom: 30px;
-		margin-left: 70px;
+		margin-bottom: rem(30);
+		margin-left: rem(70);
 		@include media-breakpoint-up(lg){
 			margin-left: 0;
 		}
 	}
 	.section-title{
-		padding-bottom: 33px;
+		padding-bottom: rem(33);
 		h2 {
-			font-size: 36px;
+			font-size: rem(36);
 			line-height: calc(44/36);
 		}
 	}
 	&__box{
-		padding-top: 20px;
+		padding-top: rem(20);
 		text-align: center;
 		@include media-breakpoint-up(lg){
 			text-align: start;
-			padding-top: 45px;
+			padding-top: rem(45);
 		}
 	}
 	&__img-box{
@@ -32,11 +32,11 @@
 		img{
 			object-fit: cover;
 			width: 100%;
-			max-width: 920px;
+			max-width: rem(920);
 		}
 	}
 	&__cbox{
-		margin-bottom: 25px;
+		margin-bottom: rem(25);
 	}
 	&__cbox--adress{
 		p{
@@ -45,21 +45,21 @@
 		a{
 			display: block;
 			text-decoration: none;
-			font-size: 14px;
+			font-size: rem(14);
 			line-height: calc(26.5/14);
 		}
 		a:after{
 			content: "🠒";
-			margin-left: 10px;
+			margin-left: rem(10);
 		}
 	}
 	&__cbox--tel{
 		p{
-			font-size: 16px;
+			font-size: rem(16);
 			line-height: calc(26.5/16);
 			margin-bottom: 3px;
 		}
-		margin-bottom: 32px;
+		margin-bottom: rem(32);
 	}
 	&__cbox--mail{
 		a {
@@ -67,7 +67,7 @@
 		}
 	}
 	&__box-header{
-		font-size: 16px;
+		font-size: rem(16);
 		line-height: calc(26.5/16);
 		font-weight: 600;
 		margin-bottom: 1px;
@@ -77,19 +77,19 @@
 	}
 	&__cbox--legal{
 		p{
-			font-size: 16px;
+			font-size: rem(16);
 			line-height: calc(26.5/16);
 			margin-bottom: 3px;
 		}
-		margin-bottom: 43px;
+		margin-bottom: rem(43);
 	}
 	&__cbox--word{
 		a{
-			font-size: 14px;
+			font-size: rem(14);
 			line-height: calc(20/14);
 		}
 		img{
-			margin-right: 15px;
+			margin-right: rem(15);
 		}
 	}
 

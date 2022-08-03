@@ -1,5 +1,6 @@
 // start .sDap2
 .sDap2 {
+	--sPB:#{rem(38)};
 	.breadcrumb{
 		margin-bottom: rem(31);
 	}
@@ -16,28 +17,30 @@
 		padding: rem(6) rem(20) rem(6) rem(20) !important;
 		font-size: rem(20) !important;
 		line-height: calc(44/20) !important;
-		margin-bottom: rem(35);
+		margin-bottom: rem(48);
 	}
 	&__btn--second{
 		background-color: #{$gray-280} !important;
 		color: #{$black} !important;
-		margin-left: rem(16);
+		margin-right: rem(16);
 	}
 	&__sw-con{
 		width: 317px;
+		margin-bottom:rem(15);
 	}
 	&__sw-sl{
-		width: 317px;
+		width: rem(317);
 	}
-	.acord-svg{
-		width: 36px;
-		margin-right: 19px;
+	&__acord-svg{
+		width: rem(36);
+		//height: rem(33);
+		margin-right: rem(15);
+		padding-bottom: rem(8);
 	}
 	&__acord-btn{
-		padding: 20px 20px 27px 0;
-		font-size: 26px;
+		padding: rem(20) rem(20) rem(27) 0;
+		font-size: rem(26);
 		line-height: calc(34/26);
-		border: none;
 		width: 100%;
 		color: $gray-530;
 		border-top: 1px solid #E7E7E7 ;
@@ -48,19 +51,26 @@
 		position: absolute;
 		right: 1px;
 	}
+	.active1:after{
+		content: "˄";
+	}
+	.active1{
+		padding-bottom: rem(8);
+	}
 	&__acord-box{
 		position: relative;
 	}
 	.active :only-child {
 		color: $orange;
 	}
-
 	&__acord-panel{
 		display: none;
 		overflow: hidden;
-	}
-	.active1:after{
-		content: "˄";
+		p{
+			font-size: rem(16);
+			line-height: 1.29;
+		}
+		margin-bottom: rem(24);
 	}
 
 

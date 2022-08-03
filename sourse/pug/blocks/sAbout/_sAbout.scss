@@ -59,7 +59,7 @@
 	}
 
 	&__ourBenefit {
-		--bs-gutter-y: 30px;
+		--bs-gutter-y: #{rem(30)};
 		margin-bottom: rem(60);
 	}
 
