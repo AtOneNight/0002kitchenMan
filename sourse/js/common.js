@@ -1156,3 +1156,29 @@ if (document.readyState !== 'loading') {
 } else {
   document.addEventListener('DOMContentLoaded', eventHandler);
 }
+new Swiper('.kart-slider-js',{
+  autoplay:{
+    delay: 5000,
+  },
+  loop: true,
+  speed: 400,
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true,
+  }
+});
+let acc = document.getElementsByClassName("sDap2__acord-box")
+for(let i=0;i <acc.length;i++){
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    this.firstChild.nextSibling.classList.toggle("active1")
+    let panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    }
+    else {
+      panel.style.display = "block";
+    }
+  })
+}

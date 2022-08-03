@@ -2,45 +2,45 @@
 .sDAP {
 	--sPB:0PX;
 	.breadcrumb{
-		margin-bottom: 31px;
+		margin-bottom: rem(31);
 	}
 	.section-title{
-		padding-bottom: 40px;
+		padding-bottom: rem(40);
 		h2 {
-			font-size:36px ;
+			font-size:rem(36) ;
 			line-height: calc(44/36);
 		}
 	}
 	h3{
-		font-size: 26px;
+		font-size: rem(26);
 		line-height: calc(34/26);
-		margin-bottom: 10px;
+		margin-bottom: rem(10);
 	}
 	h4{
-		font-size: 20px;
+		font-size: rem(20);
 		line-height: calc(34/20);
-		margin-bottom: 5px;
+		margin-bottom: rem(5);
 	}
 	h5{
-		font-size: 16px;
+		font-size: rem(16);
 		line-height: calc(26.5/16);
 	}
 	p{
-		font-size: 16px;
+		font-size: rem(16);
 		line-height: calc(22/16);
 	}
 	&__btn{
 		@extend .catalog-btn;
 		text-transform:none !important;
-		padding: 6px 20px 6px 20px !important;
-		font-size: 20px !important;
+		padding: rem(6) rem(20) rem(6) rem(20) !important;
+		font-size: rem(20) !important;
 		line-height: calc(44/20) !important;
-		margin-bottom: 35px;
+		margin-bottom: rem(35);
 	}
 	&__btn--second{
 		background-color: #{$gray-280} !important;
 		color: #{$black} !important;
-		margin-left: 16px;
+		margin-left: rem(16);
 	}
 	&__img-box{
 		img{
@@ -49,71 +49,65 @@
 		}
 	}
 	&__header-p{
-		font-size: 20px !important;
+		font-size: rem(20) !important;
 		line-height: calc(25.5/20) !important;
-		margin-bottom: 40px;
+		margin-bottom: rem(40);
 		a{
 			color: $blue;
-			margin-left: 5px;
+			margin-left: rem(5);
 		}
 	}
 	&__first-row{
-		margin-bottom: 55px;
+		margin-bottom: rem(50);
 		p{
-			margin-bottom: 15px;
+			margin-bottom: rem(15);
 		}
 	}
 	&__deliver-box{
 		border: 1px solid #E6E6E6;
-		padding: 20px 50px 33px 34px;
+		padding: rem(20) rem(70) rem(33) rem(34);
 		p{
 			margin-bottom: 0;
 		}
-		min-height: 303px;
-		@include media-breakpoint-up(md){
-			min-height: 225px;
-		}
-		@include media-breakpoint-up(lg){
-			min-height: 136px;
-		}
+		min-height: rem(136);
 	}
 	&__second-row{
-		margin-bottom: 30px;
-		--bs-gutter-y:22px ;
+		margin-bottom: rem(25);
+		--bs-gutter-y:#{rem(30)};
 	}
 	&__third-row{
-		margin-bottom: 51px;
+		margin-bottom: rem(51);
 		a {
 			display: block;
 			text-decoration: none;
-			font-size: 14px;
+			font-size: rem(14);
 			line-height: calc(26.5 / 14);
 		}
 	}
 	&__header-box{
-		padding: 0 45px 0 0;
-		margin-bottom: 20px;
+		padding: 0 rem(45) 0 0;
+		margin-bottom: rem(20);
 		h4{
-			padding-top: 34px;
+			padding-top: rem(34);
 		}
 	}
 	&__del-company{
-		margin-bottom: 31px;
+		margin-bottom: rem(31);
 	}
 	&__box-href{
-		margin-bottom: 20px;
+		margin-bottom: rem(20);
 	}
 	&__box-adress{
 		h5{
-			margin-bottom: 2px;
+			margin-bottom: rem(2);
 		}
 		p{
-			margin-bottom: 11px;
+			margin-bottom: rem(11);
 		}
 	}
 	&__box-cost{
 		h5{
-			margin-bottom: 4px;
+			margin-bottom: rem(4);
 		}
 	}
 
