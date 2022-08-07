@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d685bb29-9c07-464f-b217-0fa4dbe4ed44" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sSell/_sSell.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sSell/_sSell.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sSell/_sSell.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sSell/_sSell.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,6 +125,9 @@
       <workItem from="1659302298477" duration="597000" />
       <workItem from="1659430686866" duration="6354000" />
       <workItem from="1659522699715" duration="13581000" />
+      <workItem from="1659643184902" duration="80000" />
+      <workItem from="1659702360069" duration="597000" />
+      <workItem from="1659868480371" duration="2723000" />
     </task>
     <servers />
   </component>
@@ -159,7 +164,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/sourse/js/common.js</url>
           <line>1148</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

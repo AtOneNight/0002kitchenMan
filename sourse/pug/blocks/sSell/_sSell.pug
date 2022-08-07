@@ -2,8 +2,19 @@ mixin sSell(data)
 	// start sSell
 	+b.SECTION.sSell.section#sSell&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 sSell
-				
+			+b.section-title.text-start
+				h2 Акции
+			+e.P.content-parph Покупка бытовой техники, особенно крупной, всегда связана с непростым выбором и занимает много времени. Потом ещё приходится доплачивать за то, чтобы она приехала в целости и сохранности, причём стоимость доставки может достигать нескольких тысяч рублей! Но мы всегда идём навстречу нашим клиентам и сделали услугу доставки техники (на выделенный ассортимент) до порога вашего дома в г. Москве абсолютно бесплатной! Товар, участвующий в акции, вы можете найти в нашем Каталоге.
 			.row
+				.col-6
+					+sellCard("1")
+				.col-6
+					+sellCard("2")
+				.col-6
+					+sellCard(3)
+				.col-6
+					+sellCard()
 	// end sSell
+mixin sellCard(imgnum)
+	+e.img-box
+		img(src=`img/@2x/sellBanner${imgnum}.png` loading='lazy' alt="#")
