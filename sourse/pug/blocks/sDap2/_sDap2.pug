@@ -11,18 +11,18 @@ mixin sDap2(data)
 					+e.btn(type="submit") Способы оплаты
 					+acordion()
 				.col-12.col-md-6.col-lg-5.col-xl-4.col-xxl-3
-					+bannerSwiper()
+					+bannerSwiper("img/@2x/sDapBanner.png","img/@2x/sDapBanner.png","img/@2x/sDapBanner.png")
 
 	// end sDap2
-mixin bannerSwiper()
+mixin bannerSwiper(img,img2,img3)
 	+e.sw-con.swiper-container.kart-slider-js
 		.swiper-wrapper
 			+e.sw-sl.swiper-slide
-				img(src="img/@2x/sDapBanner.png" loading='lazy' alt="#")
+				img(src=img loading='lazy' alt="#")
 			+e.sw-sl.swiper-slide
-				img(src="img/@2x/sDapBanner.png" loading='lazy' alt="#")
+				img(src=img2 loading='lazy' alt="#")
 			+e.sw-sl.swiper-slide
-				img(src="img/@2x/sDapBanner.png" loading='lazy' alt="#")
+				img(src=img3 loading='lazy' alt="#")
 	+e.sw-pag.swiper-pagination
 mixin acordion()
 	+e.acord-box

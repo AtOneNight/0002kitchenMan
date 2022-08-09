@@ -11,11 +11,11 @@ include ../blocks/sBest/_sBest.pug
 include ../blocks/sGForm/_sGForm.pug
 include ../blocks/sBrends/_sBrends.pug
 include ../blocks/sTags/_sTags.pug
-include ../blocks/sContact/_sContact
+include ../blocks/sDAP/_sDAP
 
 block variables
     - let  mainPage= null
-    - let  bg= '03.png'
+    - let  bg= '04-1.png'
 
 block title
     - let  title= 'title'
@@ -26,5 +26,9 @@ block pagecontent
         +topLine()
         +top-nav()
         +brands()
-    +sContact()
+    +sDAP()
+    +sFormAlt({
+        title: 'Есть вопросы по поводу доставки?',
+        descr: 'Заполните форму обратной связи, мы перезвоним вам и поговорим о сотрудничестве',
+    })
     +footer()

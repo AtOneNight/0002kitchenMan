@@ -11,11 +11,12 @@ include ../blocks/sBest/_sBest.pug
 include ../blocks/sGForm/_sGForm.pug
 include ../blocks/sBrends/_sBrends.pug
 include ../blocks/sTags/_sTags.pug
-include ../blocks/sSell/_sSell
+include ../blocks/sDap2/_sDap2
+include ../blocks/sIpal/_sIpal
 
 block variables
     - let  mainPage= null
-    - let  bg= '06.png'
+    - let  bg= '07.png'
 block title
     - let  title= 'title'
     title= title
@@ -25,5 +26,5 @@ block pagecontent
         +topLine()
         +top-nav()
         +brands()
-    +sSell()
+    +sIpal()
     +footer()

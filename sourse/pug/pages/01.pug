@@ -11,19 +11,21 @@ include ../blocks/sBest/_sBest.pug
 include ../blocks/sGForm/_sGForm.pug
 include ../blocks/sBrends/_sBrends.pug
 include ../blocks/sTags/_sTags.pug
-include ../blocks/sSell/_sSell
+include ../blocks/sAbout/_sAbout.pug
 
 block variables
-    - let  mainPage= null
-    - let  bg= '06.png'
+	- let  mainPage= null 
+	- let  bg= '01.png'
+
 block title
-    - let  title= 'title'
-    title= title
+	- let  title= 'title'
+	title= title
 block pagecontent
-    +mob-mnu()
-    +header()
-        +topLine()
-        +top-nav()
-        +brands()
-    +sSell()
-    +footer()
+	+mob-mnu()
+	+header()
+		+topLine()
+		+top-nav()
+		+brands()
+	+sAbout()
+	+sForm()
+	+footer()

@@ -11,21 +11,24 @@ include ../blocks/sBest/_sBest.pug
 include ../blocks/sGForm/_sGForm.pug
 include ../blocks/sBrends/_sBrends.pug
 include ../blocks/sTags/_sTags.pug
-include ../blocks/sAbout/_sAbout.pug
+include ../blocks/sCooperation/_sCooperation
 
 block variables
-	- let  mainPage= null 
-	- let  bg= '01.png'
+    - let  mainPage= null
+    - let  bg= '02.png'
 
 block title
-	- let  title= 'title'
-	title= title
+    - let  title= 'title'
+    title= title
 block pagecontent
-	+mob-mnu()
-	+header()
-		+topLine()
-		+top-nav()
-		+brands()
-	+sAbout()
-	+sForm()
-	+footer()
+    +mob-mnu()
+    +header()
+        +topLine()
+        +top-nav()
+        +brands()
+    +sCooperation()
+    +sFormAlt({
+        title: 'Хотите сотрудничать с нами?',
+        descr: 'Заполните форму обратной связи, мы перезвоним вам и поговорим о сотрудничестве',
+    })
+    +footer()
