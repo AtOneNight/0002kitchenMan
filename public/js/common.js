@@ -348,7 +348,7 @@ function eventHandler() {
 
 	let brandsPrev = document.querySelector('.brands--js .swiper-prev');
 	let brandsNext = document.querySelector('.brands--js .swiper-next');
-	let brandsSlider = new Swiper('.breands-slider-js', {
+	let brandsSlider = new Swiper('F', {
 		slidesPerView: 'auto',
 		breakpoints: {
 			0: {

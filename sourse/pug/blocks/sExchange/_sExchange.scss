@@ -1,0 +1,67 @@
+// start .sExchange
+.sExchange {
+		// --sPT: ;
+		 --sPB: #{rem(78)};
+		// --sTPB: ;
+	.breadcrumb{
+		margin-bottom: rem(30);
+	}
+	.section-title{
+		h2{
+			font-size: rem(36);
+			line-height: calc(44/36);
+		}
+		padding-bottom: rem(40);
+	}
+	&__img-box{
+		img {
+			width: 100%;
+			object-fit: cover;
+		}
+		margin-bottom: 35px;
+	}
+	&__sEx-row{
+		h4{
+			font-size: rem(20);
+			line-height: calc(25.5/20);
+			margin-bottom: rem(35);
+		}
+		p{
+			font-size: rem(16);
+			line-height: calc(22/16);
+		}
+		a{
+			text-decoration: none;
+			font-weight: 600;
+		}
+	}
+	&__section-grey{
+		font-size:rem(16) ;
+		line-height: calc(22/16);
+		padding: rem(38) rem(39) rem(42) rem(37);
+		background-color: $gray-290;
+		margin-bottom: rem(35);
+	}
+	&__section-nothing{
+		margin-bottom: rem(33);
+	}
+	&__section-orangeBar{
+		display: flex;
+		img{
+			object-fit: cover;
+			margin-right: rem(23);
+		}
+		p{
+			font-size: rem(18);
+			line-height: calc(22/18);
+			font-weight: 300;
+		}
+		align-items: center;
+		justify-content: center;
+		margin-bottom: rem(27);
+	}
+	&__last-par{
+		font-size: rem(16);
+		line-height: 1.4;
+	}
+} // end.sExchange
