@@ -348,7 +348,7 @@ function eventHandler() {
 
 	let brandsPrev = document.querySelector('.brands--js .swiper-prev');
 	let brandsNext = document.querySelector('.brands--js .swiper-next');
-	let brandsSlider = new Swiper('F', {
+	let brandsSlider = new Swiper('.breands-slider-js', {
 		slidesPerView: 'auto',
 		breakpoints: {
 			0: {
@@ -372,6 +372,7 @@ function eventHandler() {
 			clickable: true
 		}
 	}); //
+	//
 
 	$('img.img-svg-js').each(function () {
 		var $img = $(this);
