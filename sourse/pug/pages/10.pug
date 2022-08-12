@@ -1,0 +1,31 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sFamiliar/_sFamiliar.pug
+include ../blocks/sPopular/_sPopular.pug
+include ../blocks/sNew/_sNew.pug
+include ../blocks/sIcons/_sIcons.pug
+include ../blocks/sBest/_sBest.pug
+include ../blocks/sGForm/_sGForm.pug
+include ../blocks/sBrends/_sBrends.pug
+include ../blocks/sTags/_sTags.pug
+include ../blocks/sArticles/_sArticles
+
+block variables
+    - let  mainPage= null
+    - let  bg= '010.png'
+
+block title
+    - let  title= 'title'
+    title= title
+block pagecontent
+    +mob-mnu()
+    +header()
+        +topLine()
+        +top-nav()
+        +brands()
+    +sArticles()
+    //нагадати серому за пагинацию
+    +footer()

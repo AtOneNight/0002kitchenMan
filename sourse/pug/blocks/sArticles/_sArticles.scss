@@ -1,0 +1,54 @@
+// start .sArticles
+.sArticles {
+		// --sPT: ;
+		 --sPB:#{rem(100)} ;
+		// --sTPB: ;
+	.breadcrumb{
+		margin-bottom: rem(31);
+	}
+	.section-title{
+		h2{
+			font-size: rem(36);
+			line-height: calc(44/36);
+		}
+		padding-bottom: rem(38);
+	}
+	&__img-box{
+		position: relative;
+		img{
+			width: 100%;
+			object-fit: cover;
+		}
+		margin-bottom: rem(22);
+	}
+	&__date-sq{
+		font-size: rem(14);
+		line-height: calc(34/14);
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		padding: rem(6) rem(14);
+		background-color: $gray-290;
+	}
+	&__articles-row{
+		--bs-gutter-y: #{rem(33)};
+		margin-bottom: rem(120);
+	}
+	&__articles-card{
+		h3{
+			font-size: rem(26);
+			line-height: calc(34/26);
+		}
+		p{
+			font-size: rem(14);
+			line-height: calc(22/14);
+		}
+		a{
+			text-transform: uppercase;
+			text-decoration: none;
+			font-size: rem(16);
+			line-height: calc(23.12/16);
+		}
+	}
+
+} // end.sArticles
