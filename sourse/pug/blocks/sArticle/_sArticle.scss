@@ -1,0 +1,49 @@
+// start .sArticle
+.sArticle {
+		// --sPT: ;
+		// --sPB: ;
+		// --sTPB: ;
+  .breadcrumb{
+    margin-bottom: rem(65);
+  }
+  .section-title{
+    h1{
+      font-size: rem(59);
+      line-height: calc(60.8/59);
+    }
+  }
+  &__ulcontainer{
+    color: $blue-501;
+    h3{
+      color: $blue-501;
+      font-size: rem(20);
+      line-height: calc(34/20);
+      margin-bottom: rem(15);
+    }
+    ul{
+      padding: rem(12) 0 rem(13) rem(20);
+      font-size: rem(16);
+      line-height: calc(32/16);
+      border: 1px #E7E7E7 solid;
+      margin-bottom: 0;
+    }
+    li{
+      font-size: rem(14);
+      line-height: calc(20.23/14);
+      margin-left: rem(20);
+      margin-bottom: rem(5);
+    }
+  }
+  &__paragraphs-box{
+    p{
+      font-size: rem(16);
+      line-height: calc(22/16);
+      margin-bottom: rem(40);
+    }
+    h2{
+      font-size: rem(26);
+      line-height: calc(34/26);
+      margin-bottom: rem(20);
+    }
+  }
+} // end.sArticle

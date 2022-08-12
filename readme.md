@@ -9,4 +9,4 @@
 7. <https://atonenight.github.io/0002kitchenMan/public/07.html>
 8. <https://atonenight.github.io/0002kitchenMan/public/08.html>
 9. <https://atonenight.github.io/0002kitchenMan/public/09.html>
-10.<https://atonenight.github.io/0002kitchenMan/public/10f.html>
+10. <https://atonenight.github.io/0002kitchenMan/public/10.html>
