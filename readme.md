@@ -8,3 +8,4 @@
 6. <https://atonenight.github.io/0002kitchenMan/public/06.html>
 7. <https://atonenight.github.io/0002kitchenMan/public/07.html>
 8. <https://atonenight.github.io/0002kitchenMan/public/08.html>
+9. <https://atonenight.github.io/0002kitchenMan/public/09.html>
