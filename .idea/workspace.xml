@@ -5,16 +5,19 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/05.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/05.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/07.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/07.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/08.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/08.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/11.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/11.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/common.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sourse/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/js/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sAbout/_sAbout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sAbout/_sAbout.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sArticle/_sArticle.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sArticle/_sArticle.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sArticle/_sArticle.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sArticle/_sArticle.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sDap2/_sDap2.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sDap2/_sDap2.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sDap2/_sDap2.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sDap2/_sDap2.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/pages/11.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/pages/11.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sExchange/_sExchange.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sExchange/_sExchange.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sExchange/_sExchange.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sExchange/_sExchange.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sIpal/_sIpal.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sIpal/_sIpal.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sIpal/_sIpal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sIpal/_sIpal.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +152,7 @@
       <workItem from="1660294150123" duration="13070000" />
       <workItem from="1660343523730" duration="857000" />
       <workItem from="1660383400019" duration="748000" />
-      <workItem from="1660550032518" duration="24655000" />
+      <workItem from="1660550032518" duration="33346000" />
     </task>
     <servers />
   </component>

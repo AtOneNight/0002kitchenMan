@@ -1,7 +1,7 @@
 // start .sArticle
 .sArticle {
 		// --sPT: ;
-		// --sPB: ;
+		 --sPB: #{rem(61)};
 		// --sTPB: ;
   .breadcrumb{
     margin-bottom: rem(60);
@@ -119,37 +119,17 @@
     margin-bottom: rem(40);
   }
   &__date-sq{
-    font-size: rem(14);
-    line-height: calc(34/14);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: rem(6) rem(14);
-    background-color: $gray-290;
+   @extend .sArticles__date-sq
   }
   &__articles-card{
-    h3{
-      font-size: rem(26);
-      line-height: calc(34/26);
-    }
+    @extend .sArticles__articles-card ;
     p{
-      font-size: rem(14);
-      line-height: calc(22/14);
-    }
-    a{
-      text-transform: uppercase;
-      text-decoration: none;
-      font-size: rem(16);
-      line-height: calc(23.12/16);
+      font-size: rem(14) !important;
+      line-height: calc(22/14) !important;
     }
   }
   &__img-box{
-    position: relative;
-    img{
-      width: 100%;
-      object-fit: cover;
-    }
-    margin-bottom: rem(22);
+   @extend .sArticles__img-box
   }
   &__last-section{
     padding-top: rem(100);

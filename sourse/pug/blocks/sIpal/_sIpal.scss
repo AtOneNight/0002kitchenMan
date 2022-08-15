@@ -32,11 +32,10 @@
 		padding: rem(38) rem(75) rem(42) rem(37) ;
 	}
 	&__sw-con{
-		width: rem(317);
-		margin-bottom:rem(15);
+		@extend .sDap2__sw-con
 	}
 	&__sw-sl{
-		width: rem(317);
+		width: 317px;
 	}
 	&__info-row{
 		--bs-gutter-y: #{rem(30)};
@@ -93,7 +92,10 @@
 		}
 
 	}
-	//&__info-box--2{
-	//	padding-bottom: rem(150);
-	//}
+	&__content-box{
+		@extend .sDap2__content-box;
+	}
+	&__info-box--2{
+		padding-bottom: rem(150);
+	}
 } // end.sIpal

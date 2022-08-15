@@ -45,23 +45,20 @@
 	&__nothing{
 		margin-bottom: rem(33);
 	}
-	&__orangeBar{
-		display: flex;
-		img{
-			object-fit: cover;
-			margin-right: rem(23);
-		}
-		p{
-			font-size: rem(18);
-			line-height: calc(22/18);
-			font-weight: 300;
-		}
-		align-items: center;
-		justify-content: center;
-		margin-bottom: rem(27);
+	&__note {
+		border-left: 6px solid $orange;
+		font-size: rem(18);
+		line-height: calc(22/18);
+		font-weight: 300;
+		padding: rem(3) 0 rem(10) rem(23);
+		margin-bottom: rem(35);
 	}
-	&__last-par{
-		font-size: rem(16);
-		line-height: 1.4;
+	&__last-paraph{
+		@include media-breakpoint-up(xxl){
+			width: rem(900);
+		};
+		width: auto;
+		font-size: rem(16) !important;
+		line-height: calc(22/16)!important;
 	}
 } // end.sExchange
