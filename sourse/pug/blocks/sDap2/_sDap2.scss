@@ -30,6 +30,7 @@
 	}
 	&__sw-sl{
 		width: rem(317);
+		position: relative;
 	}
 	&__acord-svg{
 		width: rem(36);
@@ -71,6 +72,30 @@
 			line-height: 1.29;
 		}
 		margin-bottom: rem(24);
+	}
+	&__content-box{
+		padding: 0 rem(30) rem(45) rem(30);
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		button{
+			@extend .catalog-btn ;
+			@extend .btn ;
+			padding:rem(13) rem(50) !important;
+
+		}
+		h3{
+			font-size: rem(26);
+			line-height: calc(34/26);
+			color: $white;
+			margin-bottom: 12px;
+		}
+		p{
+			font-size: rem(16);
+			line-height: calc(22/16);
+			color: $white;
+			margin-bottom: 34px;
+		}
 	}
 
 

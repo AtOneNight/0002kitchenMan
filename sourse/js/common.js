@@ -353,13 +353,12 @@ function eventHandler() {
       nextEl: brandsNext,
       prevEl: brandsPrev
     },
-    pagination: {
-      el: ' .swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  }); //
-  //
+    // pagination: {
+    //   el: ' .swiper-pagination',
+    //   type: 'bullets',
+    //   clickable: true
+    // }
+  })
   $('img.img-svg-js').each(function () {
     var $img = $(this);
     var imgClass = $img.attr('class');
@@ -1155,9 +1154,9 @@ if (document.readyState !== 'loading') {
 } else {
   document.addEventListener('DOMContentLoaded', eventHandler);
 }
-new Swiper('.kart-slider-js',{
+let kartSlider = new Swiper('.kart-slider-js',{
   autoplay:{
-    delay: 5000,
+    delay: 1115000,
   },
   loop: true,
   speed: 400,

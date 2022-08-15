@@ -19,10 +19,22 @@ mixin bannerSwiper(img,img2,img3)
 		.swiper-wrapper
 			+e.sw-sl.swiper-slide
 				img(src=img loading='lazy' alt="#")
+				+e.content-box
+					h3 Покупай в кредит!
+					p В нашем магазине можно приобрести товары в рассрочку или кредит без первоначального взноса и переплат через Почта Банк.
+					button узнать подробнее
 			+e.sw-sl.swiper-slide
 				img(src=img2 loading='lazy' alt="#")
+				+e.content-box
+					h3 Покупай в кредит!
+					p В нашем магазине можно приобрести товары в рассрочку или кредит без первоначального взноса и переплат через Почта Банк.
+					button узнать подробнее
 			+e.sw-sl.swiper-slide
 				img(src=img3 loading='lazy' alt="#")
+				+e.content-box
+					h3 Покупай в кредит!
+					p В нашем магазине можно приобрести товары в рассрочку или кредит без первоначального взноса и переплат через Почта Банк.
+					button узнать подробнее
 	+e.sw-pag.swiper-pagination
 mixin acordion()
 	+e.acord-box
