@@ -1,0 +1,63 @@
+// start .sMap
+.sMap {
+		// --sPT: ;
+		// --sPB: ;
+		// --sTPB: ;
+  .section-title{
+    h2{
+      font-size: rem(36);
+      line-height: calc(44/36);
+    }
+  }
+  &__bold-content{
+    ul{
+      font-size: 20px;
+      line-height:calc(26/20) ;
+      font-weight: 500;
+      list-style-type: none;
+      column-count: 3;
+      @include media-breakpoint-up(lg){
+        column-count: 1;
+      }
+    }
+    li{
+      margin-bottom: rem(15);
+    }
+    a{
+      color: $black;
+      text-decoration: none;
+    }
+  }
+  &__row{
+    --bs-gutter-y: 40px ;
+  }
+  &__title{
+    display: inline-block;
+    font-size: 20px;
+    line-height:calc(26/20) ;
+    font-weight: 500;
+    margin-bottom: rem(13);
+    text-decoration: none;
+    color: $black;
+  }
+  &__sub-row{
+    --bs-gutter-y:30px ;
+    --bs-gutter-x: 30px;
+  }
+  &__content{
+    ul{
+      font-size: 16px;
+      line-height:calc(22/16) ;
+      list-style-type: none;
+    }
+    li{
+      margin-bottom: rem(5);
+    }
+    a{
+      color: $black;
+      text-decoration: none;
+    }
+  }
+  &__{}
+  &__{}
+} // end.sMap
