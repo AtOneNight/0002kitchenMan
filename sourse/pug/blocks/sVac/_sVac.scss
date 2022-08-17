@@ -1,0 +1,38 @@
+// start .sVac
+.sVac {
+  &__content-box{
+    padding: 28.5px 29px 44px 33px;
+    ul{
+      list-style-type: none;
+      font-size: rem(14);
+      line-height: calc(22/14);
+    }
+    h3{
+      font-size: rem(20);
+      line-height: calc(34/20);
+    }
+  }
+  &__salary{
+    font-size: rem(16);
+    line-height: calc(34/16);
+    font-weight: 300;
+    b{
+      font-weight: 500;
+    }
+  }
+  &__grey-paraph{
+    font-size: rem(12);
+    line-height: calc(22/12);
+    color: #{$gray-590};
+    span{
+      margin-left: rem(19);
+    }
+  }
+  &__btn{
+    padding: 0 47px 0 45px !important;
+    font-size: rem(16);
+    line-height: calc(53/16);
+    @extend .catalog-btn;
+    @extend .btn;
+  }
+} // end.sVac
