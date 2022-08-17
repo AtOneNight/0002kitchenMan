@@ -1,15 +1,29 @@
 // start .sVac
 .sVac {
+  --sPB: #{rem(40)};
+  .breadcrumb{
+    margin-bottom: rem(30);
+  }
+  .section-title{
+    h2{
+      font-size: rem(36);
+      line-height: calc(44/36);
+    }
+    padding-bottom: rem(42);
+  }
   &__content-box{
-    padding: 28.5px 29px 44px 33px;
+    border: 1px solid #E7E7E7;
+    padding: 26.5px 28px 44px 33px;
     ul{
       list-style-type: none;
       font-size: rem(14);
       line-height: calc(22/14);
+      margin-bottom: rem(12);
     }
     h3{
       font-size: rem(20);
       line-height: calc(34/20);
+      margin-bottom: 0;
     }
   }
   &__salary{
@@ -19,14 +33,20 @@
     b{
       font-weight: 500;
     }
+    margin-bottom: rem(3);
   }
   &__grey-paraph{
     font-size: rem(12);
     line-height: calc(22/12);
     color: #{$gray-590};
     span{
-      margin-left: rem(19);
+      margin-left: 5px;
+      @include media-breakpoint-up(lg){
+        margin-left: 14px;
+      }
+      display: inline-block;
     }
+    margin-bottom: rem(10);
   }
   &__btn{
     padding: 0 47px 0 45px !important;
@@ -34,5 +54,44 @@
     line-height: calc(53/16);
     @extend .catalog-btn;
     @extend .btn;
+  }
+  &__filter{
+    position: sticky;
+    top: rem(20);
+    left: 0;
+  }
+  &__row{
+    --bs-gutter-y: 2px ;
+    flex-direction: column-reverse;
+    @include media-breakpoint-up(lg) {
+      flex-direction: inherit;
+    }
+  }
+  &__label{
+    display: block;
+    input:checked + .sVac__txt{
+      border-color: $primary;
+      background-color: $primary;
+      color: $white;
+    }
+
+    .sVac__txt{
+      border: 1px solid $gray-280;
+
+      padding: rem(12) rem(18);
+      @include media-breakpoint-up(xxl){
+        padding: 18px rem(15) 20px rem(20);
+      }
+
+      position: relative;
+      margin-top: -1px;
+      &:first-child{
+        margin-top: 0;
+      }
+
+      display: block;
+      line-height: calc(20/16);//14
+      color: $gray-600;
+    }
   }
 } // end.sVac
