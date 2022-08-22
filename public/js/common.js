@@ -1136,19 +1136,17 @@ let kartSlider = new Swiper('.kart-slider-js', {
 		type: 'bullets',
 		clickable: true
 	}
-});
-let acc = document.getElementsByClassName("sDap2__acord-box");
-
-for (let i = 0; i < acc.length; i++) {
-	acc[i].addEventListener("click", function () {
-		this.classList.toggle("active");
-		this.firstChild.nextSibling.classList.toggle("active1");
-		let panel = this.nextElementSibling;
-
-		if (panel.style.display === "block") {
-			panel.style.display = "none";
-		} else {
-			panel.style.display = "block";
-		}
-	});
-}
+}); // let acc = document.getElementsByClassName("sDap2__acord-box")
+// for(let i=0;i <acc.length;i++){
+//   acc[i].addEventListener("click", function() {
+//     this.classList.toggle("active");
+//     this.firstChild.nextSibling.classList.toggle("active1")
+//     let panel = this.nextElementSibling;
+//     if (panel.style.display === "block") {
+//       panel.style.display = "none";
+//     }
+//     else {
+//       panel.style.display = "block";
+//     }
+//   })
+// }

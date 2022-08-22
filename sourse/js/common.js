@@ -405,7 +405,6 @@ function eventHandler() {
         let ChildHeads = parent.querySelectorAll('.dd-head-js:not(.disabled)');
         $(ChildHeads).click(function () {
           let clickedHead = this;
-
           $(ChildHeads).each(function () {
             if (this === clickedHead) {
               //parent element gain toggle class, style head change via parent
@@ -425,13 +424,15 @@ function eventHandler() {
       }
     }
   }
-  makeDDGroup([
+  makeDDGroup ([
     '.payment-dd-items-js',
     '.delivery-dd-items-js',
     '.footer-dd-items-js',
     '.prod-card-dd-items-js',
+
     //'.sidebar-dd-items-js',
   ]);
+
 
   //free
   $('.free-dd-head-js').click(function () {
@@ -1167,17 +1168,17 @@ let kartSlider = new Swiper('.kart-slider-js',{
     clickable: true,
   }
 });
-let acc = document.getElementsByClassName("sDap2__acord-box")
-for(let i=0;i <acc.length;i++){
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    this.firstChild.nextSibling.classList.toggle("active1")
-    let panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    }
-    else {
-      panel.style.display = "block";
-    }
-  })
-}
+// let acc = document.getElementsByClassName("sDap2__acord-box")
+// for(let i=0;i <acc.length;i++){
+//   acc[i].addEventListener("click", function() {
+//     this.classList.toggle("active");
+//     this.firstChild.nextSibling.classList.toggle("active1")
+//     let panel = this.nextElementSibling;
+//     if (panel.style.display === "block") {
+//       panel.style.display = "none";
+//     }
+//     else {
+//       panel.style.display = "block";
+//     }
+//   })
+// }

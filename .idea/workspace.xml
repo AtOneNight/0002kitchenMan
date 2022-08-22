@@ -3,12 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="d685bb29-9c07-464f-b217-0fa4dbe4ed44" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/13.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/13.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/05.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/05.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sVac/_sVac.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sVac/_sVac.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sVac/_sVac.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sVac/_sVac.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/pages/13.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/pages/13.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/_base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sDap2/_sDap2.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sDap2/_sDap2.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sDap2/_sDap2.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sDap2/_sDap2.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/top-nav/_top-nav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/top-nav/_top-nav.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/pug/pages/05.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/pages/05.pug" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +149,10 @@
       <workItem from="1660641094794" duration="13789000" />
       <workItem from="1660730053106" duration="2091000" />
       <workItem from="1660763962603" duration="3000" />
-      <workItem from="1660770175381" duration="5192000" />
+      <workItem from="1660770175381" duration="5422000" />
+      <workItem from="1660990462560" duration="1251000" />
+      <workItem from="1661076682379" duration="5433000" />
+      <workItem from="1661157271146" duration="15491000" />
     </task>
     <servers />
   </component>

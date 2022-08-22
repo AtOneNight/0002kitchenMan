@@ -1,6 +1,6 @@
 // start .sDap2
 .sDap2 {
-	--sPB:#{rem(38)};
+	--sPB:#{rem(6)};
 	.breadcrumb{
 		margin-bottom: rem(31);
 	}
@@ -11,30 +11,18 @@
 			line-height: calc(44/36);
 		}
 	}
+	&__btn-row{
+		--bs-gutter-x: #{rem(20)};
+	}
 	&__btn{
 		@extend .catalog-btn;
+		background-color: var(--btn-bg-c,$gray-280) !important;
+		color: var(--btn-txt-c,$black) !important;
 		text-transform:none !important;
 		padding: rem(6) rem(20) rem(6) rem(20) !important;
 		font-size: rem(20) !important;
 		line-height: calc(44/20) !important;
 		margin-bottom: rem(48);
-		width: 285px;
-		@include media-breakpoint-up(sm){
-			width: 204px;
-		}
-	}
-	&__btn--second{
-		background-color: #{$gray-280} !important;
-		color: #{$black} !important;
-		@include media-breakpoint-up(sm){
-			margin-right: rem(30);
-		}
-		@include media-breakpoint-up(md){
-			margin-right: 0;
-		}
-		@include media-breakpoint-up(lg){
-			margin-right: rem(30);
-		}
 	}
 	&__sw-con {
 		width: 317px;
@@ -48,47 +36,7 @@
 		width: rem(317);
 		position: relative;
 	}
-	&__acord-svg{
-		width: rem(36);
-		//height: rem(33);
-		margin-right: rem(15);
-		padding-bottom: rem(8);
-	}
-	&__acord-btn{
-		padding: rem(20) rem(20) rem(27) 0;
-		font-size: rem(26);
-		line-height: calc(34/26);
-		width: 100%;
-		color: $gray-530;
-		border-top: 1px solid #E7E7E7 ;
 
-	}
-	&__acord-btn:after{
-		content: "˅";
-		position: absolute;
-		right: 1px;
-	}
-	.active1:after{
-		content: "˄";
-	}
-	.active1{
-		padding-bottom: rem(8);
-	}
-	&__acord-box{
-		position: relative;
-	}
-	.active :only-child {
-		color: $orange;
-	}
-	&__acord-panel{
-		display: none;
-		overflow: hidden;
-		p{
-			font-size: rem(16);
-			line-height: 1.29;
-		}
-		margin-bottom: rem(24);
-	}
 	&__sw-pag{
 		margin-bottom: rem(30);
 	}
@@ -117,6 +65,48 @@
 			color: $white;
 			margin-bottom: rem(37);
 		}
+	}
+	&__head{
+		border-top: 1px solid #E7E7E7;
+		padding: 16px 0 16px 0;
+	}
+	&__h-icon{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__h-icon>svg {
+		max-width: 100%;
+		width: rem(36);
+	}
+	&__h-row{
+		--bs-gutter-x: #{rem(16)} !important;
+		color: var(--h-row-c,black);
+	}
+	&__title{
+		font-size: rem(26);
+		line-height: calc(34/26);
+	}
+	&__chevron{
+		transform:rotateX(var(--chevron-rot-x,0deg));
+		transition: all 0.5s ease-in-out;
+	}
+	&__content{
+		display: none;
+		p{
+			font-size: 16px;
+			color: $black;
+			line-height: 20px;
+			margin-bottom: 48px;
+		}
+	}
+
+	.active{
+		display: block;
+		--h-row-c: #{$orange};
+		--chevron-rot-x: 180deg;
+		--btn-txt-c: #{$white};
+		--btn-bg-c: #{$orange};
 
 	}
 } // end.sDap2
