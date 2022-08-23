@@ -1,5 +1,6 @@
 
 .sAbout {
+	--sPB: #{rem(40)};
 	position: relative;
 	z-index: 1;
 	.section-title{
@@ -177,7 +178,6 @@
 	&__questionBar {
 		background-color: #{$gray-290};
 		padding: rem(38) rem(15) rem(50) rem(34);
-		margin-bottom: rem(80);
 		font-size: rem(16);
 		line-height: calc(20 / 16);
 

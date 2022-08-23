@@ -15,6 +15,10 @@
 		--bs-gutter-x: #{rem(20)};
 	}
 	&__btn{
+		&.active{
+			--btn-txt-c: #{$white};
+			--btn-bg-c: #{$orange};
+		}
 		@extend .catalog-btn;
 		background-color: var(--btn-bg-c,$gray-280) !important;
 		color: var(--btn-txt-c,$black) !important;
@@ -23,6 +27,14 @@
 		font-size: rem(20) !important;
 		line-height: calc(44/20) !important;
 		margin-bottom: rem(48);
+	}
+}
+.payContent{
+	&__slider-col{
+		@include media-breakpoint-up(xxl){
+			position: relative;
+			margin-top: (-74px);
+		}
 	}
 	&__sw-con {
 		width: 317px;
@@ -36,7 +48,6 @@
 		width: rem(317);
 		position: relative;
 	}
-
 	&__sw-pag{
 		margin-bottom: rem(30);
 	}
@@ -66,6 +77,9 @@
 			margin-bottom: rem(37);
 		}
 	}
+
+
+
 	&__head{
 		border-top: 1px solid #E7E7E7;
 		padding: 16px 0 16px 0;
@@ -74,6 +88,12 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+	}
+	&__dd-box{
+		&.active{
+			--h-row-c: #{$orange};
+			--chevron-rot-x: 180deg;
+		}
 	}
 	&__h-icon>svg {
 		max-width: 100%;
@@ -100,13 +120,6 @@
 			margin-bottom: 48px;
 		}
 	}
+}
 
-	.active{
-		display: block;
-		--h-row-c: #{$orange};
-		--chevron-rot-x: 180deg;
-		--btn-txt-c: #{$white};
-		--btn-bg-c: #{$orange};
 
-	}
-} // end.sDap2

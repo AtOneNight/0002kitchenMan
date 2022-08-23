@@ -32,7 +32,7 @@
 		padding: rem(38) rem(75) rem(42) rem(37) ;
 	}
 	&__sw-con{
-		@extend .sDap2__sw-con
+		@extend .payContent__sw-con;
 	}
 	&__sw-sl{
 		width: 317px;
@@ -93,7 +93,7 @@
 
 	}
 	&__content-box{
-		@extend .sDap2__content-box;
+		@extend .payContent__content-box;
 	}
 	&__info-box--2{
 		padding-bottom: rem(150);
