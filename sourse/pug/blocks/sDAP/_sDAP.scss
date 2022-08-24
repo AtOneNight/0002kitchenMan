@@ -39,9 +39,14 @@
 		font-size: rem(16);
 		line-height: calc(22 / 16);
 	}
-
+	.deliveryImg{
+		@include media-breakpoint-between(lg,xxl){
+			padding-top: rem(45);
+		}
+	}
 	&__img-box {
 		img {
+			height: 100%;
 			object-fit: cover;
 			width: 100%;
 		}
@@ -83,7 +88,7 @@
 
 	&__map-row {
 		margin-bottom: rem(51);
-
+		border: 1px solid #E6E6E6;
 		a {
 			display: block;
 			text-decoration: none;
@@ -91,14 +96,12 @@
 			line-height: calc(26.5 / 14);
 		}
 	}
-
+	&__box4box{
+		padding-right: rem(50);
+		padding-top: rem(34);
+	}
 	&__header-box {
-		padding: 0 rem(45) 0 0;
 		margin-bottom: rem(20);
-
-		h4 {
-			padding-top: rem(34);
-		}
 	}
 
 	&__del-company {
@@ -106,17 +109,31 @@
 	}
 
 	&__box-href {
-		margin-bottom: rem(20);
+		margin-bottom: rem(17);
+		a{
+			display: flex;
+			justify-content: start;
+			align-items: center;
+		}
+		a:after{
+			background-image: url(../img/svg/long-arrow-r.svg);
+			background-position: 50%;
+			background-repeat: no-repeat;
+			background-size: contain;
+			content: "";
+			flex-shrink: 0;
+			height: 1rem;
+			margin-left: 0.8125rem;
+			width: 1.875rem;
+
+		}
 	}
 
 	&__box-adress {
 		h5 {
 			margin-bottom: rem(2);
 		}
-
-		p {
-			margin-bottom: rem(11);
-		}
+		margin-bottom: rem(12);
 	}
 
 	&__box-cost {

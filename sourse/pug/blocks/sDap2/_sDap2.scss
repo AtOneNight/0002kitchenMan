@@ -30,12 +30,6 @@
 	}
 }
 .payContent{
-	&__slider-col{
-		@include media-breakpoint-up(xxl){
-			position: relative;
-			margin-top: (-74px);
-		}
-	}
 	&__sw-con {
 		width: 317px;
 		margin-bottom: rem(15);
@@ -75,6 +69,12 @@
 			line-height: calc(22/16);
 			color: $white;
 			margin-bottom: rem(37);
+		}
+	}
+	&__slider-col{
+		@include media-breakpoint-up(xxl){
+			position: relative;
+			margin-top: (-74px);
 		}
 	}
 
