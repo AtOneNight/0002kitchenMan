@@ -3,17 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="d685bb29-9c07-464f-b217-0fa4dbe4ed44" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/06.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/06.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/04.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/04.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/05.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/05.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/07.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/07.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/@1x/webp/sellBanner1.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/@1x/webp/sellBanner1.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/@1x/webp/sellBanner2.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/@1x/webp/sellBanner2.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/@1x/webp/sellBanner3.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/@1x/webp/sellBanner3.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/@2x/webp/sellBanner1.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/@2x/webp/sellBanner1.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/@2x/webp/sellBanner2.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/@2x/webp/sellBanner2.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/@2x/webp/sellBanner3.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/@2x/webp/sellBanner3.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sDAP/_sDAP.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sDAP/_sDAP.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sSell/_sSell.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sSell/_sSell.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sSell/_sSell.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sSell/_sSell.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/@1x/sellBanner1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/@1x/sellBanner2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/@1x/sellBanner3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/@1x/webp/sDapBanner1.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/@1x/webp/sDapBanner1.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/@2x/webp/sDapBanner1.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/@2x/webp/sDapBanner1.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sDap2/_sDap2.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sDap2/_sDap2.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sDap2/_sDap2.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sDap2/_sDap2.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sIpal/_sIpal.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sIpal/_sIpal.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sIpal/_sIpal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sIpal/_sIpal.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sourse/sass/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/_base.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -161,7 +164,9 @@
       <workItem from="1661246727747" duration="11793000" />
       <workItem from="1661330953788" duration="3531000" />
       <workItem from="1661459315669" duration="2473000" />
-      <workItem from="1661765218939" duration="2662000" />
+      <workItem from="1661765218939" duration="4122000" />
+      <workItem from="1661851707158" duration="594000" />
+      <workItem from="1661945868521" duration="5991000" />
     </task>
     <servers />
   </component>

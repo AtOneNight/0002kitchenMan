@@ -1,6 +1,6 @@
 // start .sDap2
 .sDap2 {
-	--sPB:#{rem(6)};
+	--sPB:#{rem(30)};
 	.breadcrumb{
 		margin-bottom: rem(31);
 	}
@@ -30,56 +30,9 @@
 	}
 }
 .payContent{
-	&__sw-con {
-		width: 317px;
-		margin-bottom: rem(15);
-		height: 370px;
-		@include media-breakpoint-up(sm) {
-			height: auto;
-		}
+	&__pay-row{
+		--bs-gutter-y: 30px;
 	}
-	&__sw-sl{
-		width: rem(317);
-		position: relative;
-	}
-	&__sw-pag{
-		margin-bottom: rem(30);
-	}
-	&__content-box{
-		padding: rem(45) rem(30) rem(45) rem(30);
-		position: absolute;
-		left: 0;
-		bottom: 0;
-		button{
-			@extend .catalog-btn ;
-			@extend .btn ;
-			@include media-breakpoint-up(md){
-				padding:rem(13) rem(50) !important;
-			}
-			padding: rem(13) 72px !important;
-		}
-		h3{
-			font-size: rem(26);
-			line-height: calc(34/26);
-			color: $white;
-			margin-bottom: rem(12);
-		}
-		p{
-			font-size: rem(16);
-			line-height: calc(22/16);
-			color: $white;
-			margin-bottom: rem(37);
-		}
-	}
-	&__slider-col{
-		@include media-breakpoint-up(xxl){
-			position: relative;
-			margin-top: (-74px);
-		}
-	}
-
-
-
 	&__head{
 		border-top: 1px solid #E7E7E7;
 		padding: 16px 0 16px 0;
@@ -118,6 +71,72 @@
 			color: $black;
 			line-height: 20px;
 			margin-bottom: 48px;
+		}
+	}
+	&__slider-col{
+		width: calc(#{rem(317)} + var(--bs-gutter-x)) !important;
+		margin-top: -74px;
+		position: relative;
+	}
+}
+.bannerSwiper{
+	.swiper-wrapper{
+		margin-bottom: 22px;
+	}
+	&__sw-sl{
+		height: auto;
+		width: 100%;
+	}
+	&__sl-bg{
+		position: absolute;
+		height: 100%;
+		left: 0;
+		top: 0;
+		width: 100%;
+		z-index: -1;
+		img{
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+		&:after{
+			border: 1px solid $white;
+			content: "";
+			height: calc(100% - 16px);
+			left: 8px;
+			position: absolute;
+			top: 8px;
+			width: calc(100% - 16px);
+			opacity: 0.2;
+		}
+	}
+	&__sl-item{
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-end;
+		min-height: rem(630);
+	}
+	&__content-box{
+		padding:30px 30px 46px 30px ;
+		h3{
+			font-size: 26px;
+			line-height: calc(34/26);
+			color: $white;
+			margin-bottom: 14px;
+		}
+		p{
+			font-size: 16px;
+			line-height: calc(22/16);
+			color: $white;
+			margin-bottom: 30px;
+		}
+		button{
+			@extend .catalog-btn;
+			padding:0 50px !important; ;
+			font-size: 16px;
+			line-height: calc(53/16);
 		}
 	}
 }

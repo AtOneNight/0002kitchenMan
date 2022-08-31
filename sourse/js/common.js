@@ -387,7 +387,6 @@ function eventHandler() {
   let paymentSlider = new Swiper('.payment-slider-js', {
     spaceBetween: 25,
     slidesPerView: 'auto',
-
     loop: true,
     pagination: {
       el: ' .swiper-pagination',
