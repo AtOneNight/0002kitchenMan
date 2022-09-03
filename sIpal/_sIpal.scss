@@ -1,12 +1,15 @@
 // start .sIpal
 .sIpal {
-	--sPB: #{rem(100)};
-	--sTPB: #{rem(29)};
+	 --sPB: #{rem(100)};
+	 --sTPB: #{rem(29)};
+
 	.breadcrumb{
 		margin-bottom: rem(32);
 	}
 	.section-title{
+		h1{
 
+		}
 	}
 	&__sub-title{
 		padding-bottom: rem(35);
@@ -23,23 +26,25 @@
 			font-size: rem(16);
 			line-height: calc(22/16);
 			background-color: $gray-290;
+
 			padding: rem(32) rem(24);
 			@include media-breakpoint-up(xxl){
 				padding: rem(38) rem(75) rem(42) rem(37);
 			}
 		}
+
 		& > *:last-child{
 			margin-bottom: 0!important;
 		}
 	}
+
 	&__info-row{
 		--bs-gutter-y: #{rem(30)};
-		position: relative;
 	}
 	&__info-box{
 		min-height: 100%;
-		border: 1px solid  #E6E6E6;
-		padding: rem(29) rem(33) rem(19) rem(30);
+		border: 1px solid #E6E6E6;
+		padding: rem(32) rem(24);
 		@include media-breakpoint-up(xxl){
 			padding: rem(29) rem(33) rem(19) rem(30);
 		}
@@ -50,7 +55,6 @@
 		}
 		ul{
 			list-style-type: none;
-			max-width:rem(429);
 			margin-bottom: rem(32);
 		}
 		b{
