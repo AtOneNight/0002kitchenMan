@@ -1156,7 +1156,7 @@ if (document.readyState !== 'loading') {
 }
 let kartSlider = new Swiper('.kart-slider-js',{
   autoplay:{
-    delay:  5000,
+    delay:  5000000,
   },
   spaceBetween: 30,
   loop: true,

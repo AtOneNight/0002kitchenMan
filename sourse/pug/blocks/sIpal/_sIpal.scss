@@ -73,4 +73,10 @@
 			color: $blue;
 		}
 	}
+	.slider-col{
+		width: 100%;
+		@include media-breakpoint-up(md){
+			width: calc(#{rem(317)} + var(--bs-gutter-x));
+		}
+	}
 } // end.sIpal
