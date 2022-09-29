@@ -29,6 +29,8 @@
 		left: 0;
 		padding: rem(6) rem(14);
 		background-color: $gray-290;
+		word-break: break-all;
+
 	}
 	&__articles-row{
 		--bs-gutter-y: #{rem(33)};
