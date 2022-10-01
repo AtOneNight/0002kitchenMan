@@ -11,7 +11,7 @@ include ../blocks/sBest/_sBest.pug
 include ../blocks/sGForm/_sGForm.pug
 include ../blocks/sBrends/_sBrends.pug
 include ../blocks/sTags/_sTags.pug
-include ../blocks/ProductCard/_ProductCard
+include ../blocks/ProductCard/_ProductCard.pug
 
 
 block variables
@@ -27,6 +27,7 @@ block pagecontent
         +topLine()
         +top-nav()
         +brands()
+    +ProductCard()
     +sFormAlt({
         title: 'Заинтересовала вакансия?',
         descr: 'Свяжись с нами, заполнив форму. Мы перезвоним тебе и все обсудим!',
