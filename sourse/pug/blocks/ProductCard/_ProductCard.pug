@@ -8,25 +8,31 @@ mixin ProductCard(data)
 				+e.P.headp У загрязнений нет шансов!
 			+e.bg-box
 				img(src="img/@2x/ProductCardlistBg.jpg" alt="" loading="lazy")
-			+e.price-box
-				a Купить
-				p 59 999 рублей
-			+e.icon-box
-				+Pcicon("0 отзывов")
-				+Pcicon("В избранное","PCheart")
-				+Pcicon("Сравнить","PCschedule")
-				+Pcicon("Поделиться","PCshare")
+			+e.price-box.row
+				.col-auto
+					a Купить
+				.col-auto
+					p 59 999 рублей
+			+e.icon-box.row
+				.col-md-auto
+					+Pcicon("0 отзывов")
+				.col-md-auto
+					+Pcicon("В избранное","PCheart")
+				.col-md-auto
+					+Pcicon("Сравнить","PCschedule")
+				.col-md-auto
+					+Pcicon("Поделиться","PCshare")
 			+e.black-row.row
-				.col-lg-5
+				.col-12.col-lg-5
 					+e.img-box
 						img(src="img/@2x/PCdishwasher.jpg")
 				.col-lg-7
-					+e.black-icons
-						+Black-icons("img/@2x/Bruce.jpg","Простой возврат и обмен")
-						+Black-icons("img/@2x/Bvan.jpg","Бесплатная доставка")
-						+Black-icons("img/@2x/Bpig.jpg","Выгодная цена")
-						+Black-icons("img/@2x/Binst.jpg","Бесплатная установка")
-						+Black-icons("img/@2x/Bshield.jpg","Фирменная гарантия")
+					+e.black-icons.row.gx-4
+						+Black-icons("Breuse","Простой возврат и обмен")
+						+Black-icons("Bpig","Бесплатная доставка")
+						+Black-icons("Bvan","Выгодная цена")
+						+Black-icons("Binst","Бесплатная установка")
+						+Black-icons("Bshield","Фирменная гарантия")
 					.section-title
 						+e.black-text
 							h3 У загрязнений нет шансов!
@@ -39,18 +45,18 @@ mixin ProductCard(data)
 			+e.imgrow.row
 				.col-4
 					+e.img-box
-						img(src="img/@2x/PC1.jpg")
+						img(src="img/@2x/PC1.jpg" alt="" loading="lazy")
 				.col-4
 					+e.img-box
-						img(src="img/@2x/PC2.jpg")
+						img(src="img/@2x/PC2.jpg" alt="" loading="lazy" )
 				.col-4
 					+e.img-box
-						img(src="img/@2x/PC3.jpg")
+						img(src="img/@2x/PC3.jpg" alt="" loading="lazy")
 			+e.s2.section-title
 				h3 Мойка на все случаи жизни
 				p В модели Asko DFI444B/1 предусмотрено семь разных программ мытья: по времени, быстрая, с полосканием, гигиеническая, ускоренная, интенсивная и автоматическая. Есть три разных режима мойки: ускоренный для максимально быстрого очищения посуды, ночной с минимальным уровнем шума и нормальный для ежедневных процедур. Также можно создавать собственные настройки и вносить их в память. Предусмотрены опции блокировки от детей, защиты от протечек, смягчения воды. Приятный бонус – индикация хода процесса и завершения цикла, наличия ополаскивателя и соли.
 			+e.img-box--1
-				img(src="img/@2x/PC4.jpg")
+				img(src="img/@2x/PC4.jpg" alt="" loading="lazy")
 			+e.desrow.row
 				+e.centercol.col-md-6
 					+e.s3.section-title
@@ -58,17 +64,17 @@ mixin ProductCard(data)
 						p Модель Asko DFI444B/1 является полностью встраиваемой, благодаря чему органично впишется в абсолютно любой интерьер. Лаконичный и стильный дизайн идеально дополнит оформление помещения. Несмотря на размер XL (82 сантиметра), посудомоечная машина смотрится компактно. Дверь цельнометаллическая. Также на корпусе есть текстовый дисплей, чтобы вы могли контролировать процесс мойки.
 				.col-md-6
 					+e.img-box--2
-						img(src="img/@2x/PC5.jpg")
+						img(src="img/@2x/PC5.jpg" alt="" loading="lazy")
 
 
 
 
 
 mixin Pcicon(text,span)
-	+e.picon-group
+	+e.picon-group.col-auto
 		+icon(span)
 		a=text
 mixin Black-icons(icon,text)
-	+e.black-box
-		img(src=icon)
+	+e.black-box.col-3.col-md-auto
+		+icon(icon)
 		p=text

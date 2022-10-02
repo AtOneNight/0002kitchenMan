@@ -19,9 +19,9 @@
 	}
 	.section-title{
 		h2{
-			font-size: 59px ;
+			font-size: rem(59) ;
 			line-height: calc(70.8/59);
-			margin-bottom: 30px;
+			margin-bottom: rem(30);
 			color: $gray-110;
 		}
 		&__headp{
@@ -54,20 +54,15 @@
 		}
 	}
 	&__price-box{
-		display: flex;
-		align-items: center;
-		justify-content: flex-start;
 		margin-bottom: 75px;
 		a{
 			background-color: $orange;
 			color: $white !important;
-			padding-left: 79px ;
-			padding-right: 79px;
+			padding: 15px 79px 15px 79px;
 			font-size: 16px ;
 			line-height: calc(53/16);
-			margin-right: 41px;
+			margin-right: 12px;
 			text-transform: uppercase;
-
 		}
 		p{
 			font-size: 24px ;
@@ -75,18 +70,21 @@
 			color: $white;
 			font-weight: 600;
 			margin-bottom: 0;
+			padding-top: 12px;
 		}
 	}
 	&__icon-box{
-		display: flex;
-		justify-content: start;
-		align-items: center;
-		margin-bottom: 82px;
+		margin-bottom: 15px;
+		@include media-breakpoint-up(md){
+			margin-bottom: 82px;
+		}
 		& > *:last-child{
 			margin-right: 0;
 		}
 	}
 	&__picon-group{
+		display: inline-block;
+		margin-right: 15px;
 		.icon{
 			color: $white;
 			margin-right: 15px;
@@ -100,44 +98,49 @@
 		}
 		a{
 			color: $white !important;
-			margin-right: 45px;
+			margin-right: 1px;
 			font-size: 18px ;
 			line-height: calc(26.1/18);
 		}
 	}
 	&__img-box{
 		img{
-			align-self: center;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
 			object-fit: cover;
 			max-width: 100%;
 		}
 	}
 	&__black-icons{
-		display: flex;
-		align-items: center;
-		justify-content: flex-start;
 		color: $white;
 		margin-bottom: 61px;
+		--bs-gutter-x: 1px;
 	}
 	&__black-box{
-		max-width: 135px;
-		max-height: 144px;
-		padding: 29px 7px 27px 6px;
-		margin-right: 13px;
+		width: calc(100% / 5)!important;
+		min-height: 144px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		background-color: rgba(32, 32, 32, 0.7);
+		background-color:rgba(32, 32, 32, 0.7);
 		backdrop-filter: blur(17.5px);
 		text-align: center;
+		font-weight: 300;
+		@include media-breakpoint-up(xxl){
+			max-width: 135px;
+		}
 		p {
 			font-size: 16px;
 			line-height: calc(15.5 / 16);
+			min-height: rem(31);
 		}
-		img{
-			object-fit: cover;
+		.icon{
+			height: 24px;
+			width: 24px;
 			margin-bottom: 16px;
+			color: $yellow;
 		}
 	}
 	&__black-text{
@@ -148,6 +151,7 @@
 	&__black-row{
 		margin-bottom: 100px;
 		--bs-gutter-x: 50px;
+		--bs-gutter-y: 50px;
 	}
 	&__imgrow{
 		margin-bottom: 92px;
