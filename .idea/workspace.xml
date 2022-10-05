@@ -2,14 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d685bb29-9c07-464f-b217-0fa4dbe4ed44" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/img/@1x/PC6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/@1x/PCteka.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/@1x/webp/PC6.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/@1x/webp/PCteka.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/@2x/PC6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/@2x/PCteka.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/@2x/webp/PC6.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/@2x/webp/PCteka.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/PCask.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/PCmap.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/PCplus.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/PCvan.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Pcpercent.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sourse/img/PC6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sourse/img/PCteka.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sourse/svg/PCplus.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/14.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/14.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/@1x/PC2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/@2x/PC2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/svg/sprite.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/svg/sprite.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/ProductCard/_ProductCard.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/ProductCard/_ProductCard.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/ProductCard/_ProductCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/ProductCard/_ProductCard.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/_base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/sass/_sprite.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/_sprite.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/sass/sprite.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/sprite.svg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +190,9 @@
       <workItem from="1664450816151" duration="1088000" />
       <workItem from="1664529546497" duration="12720000" />
       <workItem from="1664616609501" duration="9381000" />
-      <workItem from="1664708210524" duration="6484000" />
+      <workItem from="1664708210524" duration="8279000" />
+      <workItem from="1664782340163" duration="13145000" />
+      <workItem from="1664961392223" duration="15675000" />
     </task>
     <servers />
   </component>

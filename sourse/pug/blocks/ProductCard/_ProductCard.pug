@@ -1,6 +1,6 @@
 mixin ProductCard(data)
 	// start ProductCard
-	+b.SECTION.ProductCard.section#ProductCard&attributes(attributes)
+	+b.SECTION.ProductCard.section#ProductCard&attributes(attributes).dark-page
 		.container
 			+breadcrumb("Главная","Каталог", "Посудомоечная машина Asko DFI444B/1" )
 			+b.section-title
@@ -27,10 +27,10 @@ mixin ProductCard(data)
 					+e.img-box
 						img(src="img/@2x/PCdishwasher.jpg")
 				.col-lg-7
-					+e.black-icons.row.gx-4
+					+e.black-icons-row.row
 						+Black-icons("Breuse","Простой возврат и обмен")
-						+Black-icons("Bpig","Бесплатная доставка")
-						+Black-icons("Bvan","Выгодная цена")
+						+Black-icons("Bvan","Бесплатная доставка")
+						+Black-icons("Bpig","Выгодная цена")
 						+Black-icons("Binst","Бесплатная установка")
 						+Black-icons("Bshield","Фирменная гарантия")
 					.section-title
@@ -65,8 +65,114 @@ mixin ProductCard(data)
 				.col-md-6
 					+e.img-box--2
 						img(src="img/@2x/PC5.jpg" alt="" loading="lazy")
-
-
+			+e.content-bar
+				.row
+					.col-auto
+						a().active Характеристики товара
+					.col-auto
+						a() Отзывы
+					.col-auto
+						a() Доставка и оплата
+			+e.content
+				+e.content-box
+					+e.CB-title Габариты и вес
+					+CB("Глубина встраивания (см)","49")
+					+CB("Ширина встраивания (см)","28")
+				+e.content-box
+					+e.CB-title Мощность варочных зон
+					+CB("Задняя (кВт)","3")
+					+CB("Передняя (кВт)","1")
+				+e.content-box
+					+e.CB-title Мощность и энергопотребление
+					+CB("Тип газа","природный/LPG (бутан, пропан)")
+				+e.content-box
+					+e.CB-title  Общие характеристики
+					+CB("Артикул","10209256")
+					+CB("Габариты, ВхШхГ (см)","4x30x51")
+					+CB("Газ-контроль","есть")
+					+CB("Гарантийный срок","24 мес")
+					+CB("Глубина (см)","51")
+					+CB("Дополнительная информация","Горелки с декоративным откосом, Планка 40204391 для комбинирования с другими модульными панелями из нержавеющей стали (приобретается отдельно)")
+					+CB("Защита от детей","нет")
+					+CB("Количество газовых конфорок","2")
+					+CB("Конфорка WOK"," нет")
+					+CB("Материал","нерж. сталь")
+					+CB("Материал решетки","эмалированная")
+					+CB("Производитель","Teka")
+					+CB("Размеры ниши для встраивания (Ш х Г), см","28x49")
+					+CB("Страна-производитель","Турция")
+					+CB("Тип варочной панели","газовая")
+					+CB("Тип управления","механическое")
+					+CB("Цвет","нерж.сталь")
+					+CB("Цвет рамки","нержавеющая сталь")
+					+CB("Цвет фурнитуры","эффект нержавеющей стали")
+					+CB("Ширина (см)","30")
+					+CB("Электроподжиг","нет")
+				+e.content-box
+					+e.CB-title Общие характеристики тека irs 631 white
+					+CB("Габариты (ВхШхГ)","4x30x51")
+					+CB("Способ подключения","газовая")
+				+e.content-box
+					+e.CB-title Основные
+					+CB("System.ActivePrevStage","Есть")
+				+e.content-box
+					+e.CB-title Основные характеристики
+					+CB("Высота (см)","4.0000")
+				+e.content-box
+					+e.CB-title Технические характеристики
+					+CB("Общая потребляемая мощность (кВт)","4")
+					+CB("Приспособлена для LPG (сжиженный нефтяной газ)","да")
+					+CB("Регулировка мощности","бесступенчатая")
+				+e.content-box
+					+e.CB-title Управление
+					+CB("Отсрочка запуска","нет")
+					+CB("Расположение элементов управления","спереди")
+				+e.content-box
+					+e.CB-title Установка
+					+CB("Размеры выреза, см:","28x49")
+			+e.s4.section-title
+				h3 Посудомоечная машина Asko DFI444B/1
+			+e.Pcrow.row
+				+e.img-col.col-xl-auto
+					+e.img-box
+						img(src="img/@2x/PC6.jpg" loading="lazy" alt="" )
+				+e.product-col.col-xl-auto.col-md-5
+					+e.product-box
+						+PB("Артикул:","10209256")
+						+PB("Цвет:","нерж.сталь")
+						+PB("Гарантийный срок:	","24 мес")
+						+PB("Тип управления:","механическое")
+						+PB("Страна-производитель:","Турция")
+						+PB("Цвет фурнитуры:","эффект нержавеющей стали")
+						+PB("Глубина (см):","51")
+						+PB("Энергопотребление:","250 кВт")
+						+PB("Мин. температура:","-25 С")
+						+PB("Макс. температура:","+10 С")
+						+PB("Высота, см:","235")
+						+PB("Ширина, см:","120")
+					+e.A(href="#").more больше характеристик
+					+e.img-box
+						img(src="img/@2x/PCteka.png" loading="lazy" alt="")
+				.col-xl.col-md-7
+					+e.black-section
+						h3 69 990 руб.
+						+e.bonus-row.row
+							.col-auto
+								+e.bs-val +299.5
+							.col-auto
+								+e.bs-key бонусов
+							.col-auto
+								+e.img-box
+									img(src="img/svg/PCask.svg" loading="lazy" alt ="")
+						+e.btn-row.row
+							.col-6
+								+e.A.black-section-btn(href="#") В корзину
+							.col-6
+								+e.A.black-section-btn--b(href="#") Купить в 1 клик
+						+e.A(href='').credit-btn Оформить рассрочку
+					+e.BS-box
+						+BS("img/svg/PCvan.svg","Доставка:","бесплатно")
+						+BS("img/svg/PCmap.svg","Самовывоз:","сегодня, бесплатно")
 
 
 
@@ -75,6 +181,27 @@ mixin Pcicon(text,span)
 		+icon(span)
 		a=text
 mixin Black-icons(icon,text)
-	+e.black-box.col-3.col-md-auto
-		+icon(icon)
-		p=text
+	+e.black-col.col-12.col-sm-auto
+		+e.black-box
+			+e.svg-box
+				+icon(icon)
+			p=text
+mixin CB(key,value)
+	+e.value-row.row
+		.col-4
+			+e.CB-key=key
+		.col-8
+			+e.CB-value=value
+mixin PB(text,span)
+	+e.span-box
+		span.PBkey=text
+		span.PBvalue=span
+mixin BS(img,text,span)
+	+e.border-section
+		+e.BS-row.row.align-items-center
+			.col-auto
+				+e.BS-img
+					img(src=img)
+			.col
+				+e.SPAN.BS-key=text
+				+e.SPAN.BS-value=span
