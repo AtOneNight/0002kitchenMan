@@ -217,7 +217,8 @@
 		--bs-gutter-y: 50px;
 	}
 	&__Pcrow{
-		--bs-gutter-x: 3.625rem
+		--bs-gutter-x: 3.625rem;
+		margin-bottom: 50px;
 	}
 	&__value-row{
 		margin-bottom: 8px;
@@ -408,6 +409,38 @@
 		@include media-breakpoint-up(xl){
 			width: 26.6%!important;
 		}
+	}
+	&__swiper-con{
+		position: relative;
+		.swiper-prev,
+		.swiper-next {
+			@extend .ball-prev-next;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			z-index: 100;
+		}
+		.swiper-prev{
+			right: calc(100% + #{rem(30)});
+		}
+		.swiper-next {
+			left: calc(100% + #{rem(30)});
+		}
+		.swiper-slide{
+			&:not(.swiper-slide-active){
+				opacity: 0.2;
+				}
+			}
+			&:hover{
+				&:after{
+					opacity: 0.2;
+				}
+			}
+		}
+	&__simg-box{
+		@extend .accept-ratio-frame;
+		padding-top: calc(641/1360 * 100%);
+		min-height: rem(300);
 	}
 
 } // end.ProductCard

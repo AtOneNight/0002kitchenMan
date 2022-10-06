@@ -1138,12 +1138,9 @@ let kartSlider = new Swiper('.kart-slider-js', {
 	}
 });
 let PCswiper = new Swiper('.ProductCard__PCswiper', {
-	autoplay: {
-		delay: 500000
-	},
 	navigation: {
-		nextEl: '.ProductCard__sbn',
-		prevEl: '.ProductCard__sbp'
+		nextEl: '.swiper-next',
+		prevEl: '.swiper-prev'
 	},
 	loop: true,
 	speed: 400

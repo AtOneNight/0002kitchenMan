@@ -173,19 +173,19 @@ mixin ProductCard(data)
 					+e.BS-box
 						+BS("img/svg/PCvan.svg","Доставка:","бесплатно")
 						+BS("img/svg/PCmap.svg","Самовывоз:","сегодня, бесплатно")
-			+e.PCswiper.swiper-container
-				.swiper-wrapper
-					.swiper-slide
-						+e.img-box
-							img(src="img/@2x/PC7.jpg")
-					.swiper-slide
-						+e.img-box
-							img(src="img/@2x/PC7.jpg")
-					.swiper-slide
-						+e.img-box
-							img(src="img/@2x/PC7.jpg")
-				+e.sbp.swiper-button-prev
-				+e.sbn.swiper-button-next
+			+e.swiper-con
+				+e.PCswiper.swiper
+					.swiper-wrapper
+						.swiper-slide
+							+e.simg-box
+								img(src="img/@2x/PC7.jpg")
+						.swiper-slide
+							+e.simg-box
+								img(src="img/@2x/PC8.png")
+						.swiper-slide
+							+e.simg-box
+								img(src="img/@2x/PC9.png")
+				+arrow2()
 
 
 
