@@ -120,7 +120,7 @@ mixin ProductCard(data)
 						.swiper-slide
 							+e.simg-box
 								img(src="img/@2x/PC9.png")
-				+arrow2()
+				+arrow2("sw-prev","sw-next")
 
 
 
@@ -132,7 +132,7 @@ mixin Black-icons(icon,text)
 	+e.icon-col.col-12.col-sm-auto
 		+e.icon-box
 			+e.svg-box
-				+icon(icon)
+				img(src=`img/svg/${icon}.svg`)
 			p=text
 mixin CBtop(title, addTittleClass='')
 	+e.cb-item

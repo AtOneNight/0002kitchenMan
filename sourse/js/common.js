@@ -1169,8 +1169,8 @@ let kartSlider = new Swiper('.kart-slider-js',{
 })
 let PCswiper = new Swiper('.ProductCard__PCswiper',{
   navigation:{
-    nextEl: '.swiper-next',
-    prevEl: '.swiper-prev'
+    nextEl: '.sw-next',
+    prevEl: '.sw-prev'
   },
   loop: true,
   speed: 400,

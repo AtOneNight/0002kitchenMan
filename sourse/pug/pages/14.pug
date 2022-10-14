@@ -12,6 +12,8 @@ include ../blocks/sGForm/_sGForm.pug
 include ../blocks/sBrends/_sBrends.pug
 include ../blocks/sTags/_sTags.pug
 include ../blocks/ProductCard/_ProductCard.pug
+include ../blocks/sFamiliar/_sFamiliar.pug
+
 
 
 block variables
@@ -28,8 +30,9 @@ block pagecontent
         +top-nav()
         +brands()
     +ProductCard()
-    +sFormAlt({
-        title: 'Заинтересовала вакансия?',
-        descr: 'Свяжись с нами, заполнив форму. Мы перезвоним тебе и все обсудим!',
+    +sFamiliar({
+        title: 'Смотрите так же',
+        bg: true,
+        addClasses: 'dark-bg',
     })
     +footer()

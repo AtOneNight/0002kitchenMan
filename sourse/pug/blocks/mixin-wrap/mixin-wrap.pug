@@ -16,10 +16,10 @@ mixin arrow()
 	.swiper-button-hand.swiper-button-hand-next.swiper-button-next
 		+icon('chevron-right')
 
-mixin arrow2()
-	.swiper-prev
+mixin arrow2(addTittleClass='', addTittleClass1='')
+	.swiper-prev(class=addTittleClass)
 		+icon('chevron-left')
-	.swiper-next
+	.swiper-next(class=addTittleClass1)
 		+icon('chevron-right')
 //- /arrow for swiper-slider
 

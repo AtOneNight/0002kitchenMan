@@ -2,6 +2,7 @@
 .ProductCard {
 	position: relative;
 	z-index: 1;
+	--sPB: 0;
 	.breadcrumb{
 		margin-bottom: 80px;
 	}
@@ -141,11 +142,6 @@
 			padding-left: rem(10);
 			font-weight: 300;
 		}
-		.icon{
-			height: rem(32);
-			width: rem(32);
-			color: $white;
-		}
 	}
 	&__svg-box{
 		display: flex;
@@ -156,8 +152,9 @@
 		padding-top: 31px;
 	}
 	&__info-text{
+		line-height: 1.625;
 		p{
-			margin-bottom: 15px;
+			margin-bottom: rem(16);
 		}
 		h3{
 			color: $white;
@@ -176,7 +173,7 @@
 		margin-bottom: 59px;
 	}
 	&__designe-row{
-		margin-bottom: rem(85);
+		margin-bottom: rem(90);
 	}
 	&__centercol{
 		@include media-breakpoint-down(xxl){
@@ -200,34 +197,13 @@
 			margin-left: 60px;
 		}
 	}
-	&__content-bar{
-		.active{
-			--CBcolor: #{$orange};
-		}
-		& > *:last-child{
-			margin-right: 0;
-		}
-	}
-	&__PC-tabs{
-		font-size: rem(36);
-		font-weight: calc(44 / 36);
-		margin-right: 18px;
-		color: var(--CBcolor, $white) !important;
-		text-decoration: none;
-	}
-	&__tabs-row{
-		margin-bottom: 40px;
-	}
-	&__content{
-		margin-bottom: 46px;
-	}
 	&__s4{
 		margin-bottom: rem(50);
 	}
 	&__Pc-row{
 		--bs-gutter-x: 3.625rem;
 		--bs-gutter-y: 2rem;
-		margin-bottom: 50px;
+		margin-bottom: rem(82);
 	}
 	&__img-col{
 		@include media-breakpoint-up(xl){
@@ -421,6 +397,7 @@
 
 } // end.ProductCard
 .pc-tabs{
+	padding-bottom: rem(13);
 	&__tabs-content{
 		@include media-breakpoint-down(sm){
 			display: block!important;
@@ -433,7 +410,6 @@
 			--chevron-rotate: 180deg;
 		}
 	}
-
 	&__dd-head{
 		cursor: pointer;
 		display: flex;
@@ -499,7 +475,6 @@
 			}
 		}
 	}
-	padding-bottom: rem(35);
 	&__caption-slider{
 		padding-bottom: rem(35);
 		@include media-breakpoint-up(xxl){
