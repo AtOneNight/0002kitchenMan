@@ -1,32 +1,32 @@
 mixin ProductCard(data)
 	// start ProductCard
-	+b.SECTION.ProductCard.section#ProductCard&attributes(attributes).dark-page
+	+b.ProductCard.section#ProductCard&attributes(attributes).dark-page
 		.container
 			+breadcrumb("Главная","Каталог", "Посудомоечная машина Asko DFI444B/1" )
 			+b.section-title
-				h2 Посудомоечная машина<br/> Asko DFI444B/1
+				h1 Посудомоечная машина<br/> Asko DFI444B/1
 				+e.P.headp У загрязнений нет шансов!
 			+e.bg-box
 				img(src="img/@2x/ProductCardlistBg.jpg" alt="" loading="lazy")
-			+e.price-box.row
-				.col-auto
-					a Купить
-				.col-auto
+			+e.price-box.row.align-items-center.gy-4
+				.col-sm-auto
+					+e.btn-price(href="#") Купить
+				.col-sm-auto.order-first.order-lg-0
 					p 59 999 рублей
-			+e.top-icons-row.row
-				.col-md-auto
+			+e.top-icons-row.row.gy-4
+				.col-auto
 					+Pcicon("0 отзывов")
-				.col-md-auto
+				.col-auto
 					+Pcicon("В избранное","PCheart")
-				.col-md-auto
+				.col-auto
 					+Pcicon("Сравнить","PCschedule")
-				.col-md-auto
+				.col-auto
 					+Pcicon("Поделиться","PCshare")
 			+e.top-row.row
-				.col-12.col-lg-5
-					+e.img-box
+				.col-lg-5
+					+e.img-box--3
 						img(src="img/@2x/PCdishwasher.jpg")
-				.col-lg-7
+				.col-lg-7.order-first.order-lg-1
 					+e.icons-row.row
 						+Black-icons("Breuse","Простой возврат и обмен")
 						+Black-icons("Bvan","Бесплатная доставка")
@@ -57,11 +57,11 @@ mixin ProductCard(data)
 			+e.img-box--1
 				img(src="img/@2x/PC4.jpg" alt="" loading="lazy")
 			+e.designe-row.row
-				+e.centercol.col-md-6
+				+e.centercol.col-lg-6
 					+e.s3.section-title
 						h3 Современный дизайн
 						p Модель Asko DFI444B/1 является полностью встраиваемой, благодаря чему органично впишется в абсолютно любой интерьер. Лаконичный и стильный дизайн идеально дополнит оформление помещения. Несмотря на размер XL (82 сантиметра), посудомоечная машина смотрится компактно. Дверь цельнометаллическая. Также на корпусе есть текстовый дисплей, чтобы вы могли контролировать процесс мойки.
-				.col-md-6
+				.col-lg-6
 					+e.img-box--2
 						img(src="img/@2x/PC5.jpg" alt="" loading="lazy")
 			+Pctabs
@@ -86,7 +86,7 @@ mixin ProductCard(data)
 						+PB("Высота, см:","235")
 						+PB("Ширина, см:","120")
 					+e.A(href="#").more больше характеристик
-					+e.img-box
+					+e.img-box--4
 						img(src="img/@2x/PCteka.png" loading="lazy" alt="")
 				.col-xl.col-md-7
 					+e.black-section
@@ -125,28 +125,35 @@ mixin ProductCard(data)
 
 
 mixin Pcicon(text,span)
-	+e.picon-group.col-auto
-		+icon(span)
-		a=text
+	+e.picon-group(href="#")
+		if span
+			+e.icon-wrap
+				+icon(span)
+		+e.i-txt=text
+
 mixin Black-icons(icon,text)
 	+e.icon-col.col-12.col-sm-auto
 		+e.icon-box
 			+e.svg-box
 				img(src=`img/svg/${icon}.svg`)
 			p=text
+
 mixin CBtop(title, addTittleClass='')
 	+e.cb-item
 		+e.cb-title(class=addTittleClass)=title
 		+e.cb-content-wrap
 			block
+
 mixin CB(key,value)
 	+e.value-row.row
 		+e.CB-key.col.col-md-6.col-lg-5=key
 		+e.CB-value.col-auto.col-md=value
+
 mixin PB(text,span)
 	+e.span-box
 		span.PBkey=text
 		span.PBvalue=span
+
 mixin BS(img,text,span)
 	+e.border-section
 		+e.BS-row.row.align-items-center
@@ -156,6 +163,7 @@ mixin BS(img,text,span)
 			.col
 				+e.SPAN.BS-key=text
 				+e.SPAN.BS-value=span
+
 mixin Pctabs(fbtntxt='Характеристики товара')
 	+b.pc-tabs.tabs
 		+e.caption-slider.d-none.d-sm-block
@@ -220,6 +228,7 @@ mixin Pctabs(fbtntxt='Характеристики товара')
 				| 2
 			+sProdCardTabsContent('Доставка и оплата', 3)
 				| 3
+
 mixin sProdCardTabsContent(tabName, imgNum, activeClasses='')
 	+e.tabs-content.tabs__content(class=activeClasses)
 		+e.dd-item

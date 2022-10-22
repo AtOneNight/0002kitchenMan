@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="d685bb29-9c07-464f-b217-0fa4dbe4ed44" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/14.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/14.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/ProductCard/_ProductCard.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/ProductCard/_ProductCard.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/ProductCard/_ProductCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/ProductCard/_ProductCard.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/sass/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/_base.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +53,7 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Pug/Jade" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -176,7 +180,8 @@
       <workItem from="1665304885112" duration="1270000" />
       <workItem from="1665485416857" duration="10887000" />
       <workItem from="1665739468122" duration="9674000" />
-      <workItem from="1666341636964" duration="3728000" />
+      <workItem from="1666341636964" duration="5937000" />
+      <workItem from="1666425771288" duration="6400000" />
     </task>
     <servers />
   </component>
