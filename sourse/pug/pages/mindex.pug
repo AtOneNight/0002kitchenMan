@@ -3,7 +3,7 @@ extends layout/main.pug
 
 include ../blocks/sContent/_sContent.pug
 include ../blocks/sContact/_sContact.pug
-include ../blocks/sFamiliar1/_sFamiliar1.pug
+include ../blocks/sFamiliar/_sFamiliar.pug
 include ../blocks/sPopular/_sPopular.pug
 include ../blocks/sNew/_sNew.pug
 include ../blocks/sIcons/_sIcons.pug
@@ -11,6 +11,9 @@ include ../blocks/sBest/_sBest.pug
 include ../blocks/sGForm/_sGForm.pug
 include ../blocks/sBrends/_sBrends.pug
 include ../blocks/sTags/_sTags.pug
+include ../blocks/headerM/_headerM.pug
+include ../blocks/topLineM/_topLineM.pug
+include ../blocks/top-navM/_top-navM.pug
 
 block variables
     - let  mainPage= null
@@ -21,9 +24,7 @@ block title
     title= title
 block pagecontent
     +mob-mnu()
-    +header()
-        +topLine()
-        +top-nav()
-        +brands()
-    +headerBlock()
-    +sFamiliar1()
+    +headerM()
+        +topLineM()
+        +top-navM()
+        +brandsM()

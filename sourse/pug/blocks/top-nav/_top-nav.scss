@@ -261,7 +261,7 @@
 
 	&__container{
 		@include media-breakpoint-up(xxl){
-			padding-left: rem(60);
+			padding-left: rem(40);
 		}
 	}
 	&__row{
@@ -293,8 +293,8 @@
 	&__link{
 		display: block;
 		text-decoration: none;
-		font-size: rem(17);
-		line-height: (27/17);
+		font-size: rem(18);
+		line-height: (27/18);
 		color: $gray-580;
 	}
 
