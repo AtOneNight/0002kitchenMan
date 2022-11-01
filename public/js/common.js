@@ -1145,3 +1145,13 @@ let PCswiper = new Swiper('.ProductCard__PCswiper', {
 	loop: true,
 	speed: 400
 });
+let PC1swiper = new Swiper('.swiper-pc', {
+	thumbs: {
+		swiper: {
+			el: '.swiper-pc-thumb',
+			slidesPerView: 4
+		},
+		slidesPerView: 1,
+		watchOverflow: false
+	}
+});

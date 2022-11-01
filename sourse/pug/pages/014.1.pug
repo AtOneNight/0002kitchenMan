@@ -13,6 +13,8 @@ include ../blocks/sBrends/_sBrends.pug
 include ../blocks/sTags/_sTags.pug
 include ../blocks/sVac/_sVac.pug
 include ../blocks/sForm/_sForm
+include ../blocks/ProductCard/_ProductCard
+include ../blocks/ProductCard2/_ProductCard2
 
 block variables
     - let  mainPage= null
@@ -27,11 +29,4 @@ block pagecontent
         +topLine()
         +top-nav()
         +brands()
-    +smProductCard(
-        {
-
-        },
-        {
-
-        }
-    )
+    +ProductCard2

@@ -1,0 +1,107 @@
+mixin ProductCard2(data)
+	// start ProductCard2
+	+b.SECTION.ProductCard2.section#ProductCard2&attributes(attributes)
+		+e.bg-box
+			img(src="img/@2x/0141BG.jpg")
+		.container
+			+breadcrumb("Главная" , "Каталог" , "Холодильник Toshiba" ,"GR-RT565RS(N)")
+			+smProductCard2({
+				swiperImg: "PC-fridge",
+				swiperImg1: "PC-fridge-mini",
+				swiperImg2: "PC-fridge1",
+				swiperImg3: "PC-fridge2",
+				swiperImg4: "PC-fridge3",
+				Header: "Холодильник Toshiba GR-RT565RS(N)",
+				PCimg: "PC6",
+				Companyimg: "PCteka",
+				Price: "69 990 руб.",
+				BonusValue: "+299.5"
+			},
+				{
+					key1: "Артикул:",				val1: "10209256",
+					key2: "Цвет:", 					val2: "нерж.сталь",
+					key3: "Гарантийный срок",		val3: "24 мес",
+					key4: "Тип управления", 		val4: "Механичиское ",
+					key5: "Страна производитель ",  val5: "Турция",
+					key6: "Цвет фурнитуры", 		val6: "эффект нержавеющей стали",
+					key7: "Глубина (см):", 			val7: "51",
+					key8: "Энергопотребление:", 	val8: "250 кВт",
+					key9: "Высота, см:", 			val9: "-25c",
+					key10: "Ширина, см:", 			val10: "120",
+					key11:"Мин. температура:", 		val11: "235",
+					key12: "Макс. температура", 	val12: "+10",
+
+				})
+	// end ProductCard2
+
+mixin smProductCard2(data, data1)
+	+b.smProductCard2
+		+e.Card-header
+			h3=data.Header
+		+e.Pc-row.row
+			+e.img-col.col-xl-auto
+				.swiper-pc.swiper-container
+					.swiper-wrapper
+						.swiper-slide
+							+e.img-box
+								img(src=`img/@2x/${data.swiperImg}.jpg` loading="lazy" alt="")
+						.swiper-slide
+							+e.img-box
+								img(src=`img/@2x/${data.swiperImg}.jpg` loading="lazy" alt="")
+						.swiper-slide
+							+e.img-box
+								img(src=`img/@2x/${data.swiperImg}.jpg` loading="lazy" alt="")
+						.swiper-slide
+							+e.img-box
+								img(src=`img/@2x/${data.swiperImg}.jpg` loading="lazy" alt="")
+				.swiper-pc-thumb.swiper-container
+					.swiper-wrapper
+						.swiper-slide
+							+e.img-box
+								img(src=`img/@2x/${data.swiperImg1}.jpg` loading="lazy" alt="")
+						.swiper-slide
+							+e.img-box
+								img(src=`img/@2x/${data.swiperImg2}.jpg` loading="lazy" alt="")
+						.swiper-slide
+							+e.img-box
+								img(src=`img/@2x/${data.swiperImg3}.jpg` loading="lazy" alt="")
+						.swiper-slide
+							+e.img-box
+								img(src=`img/@2x/${data.swiperImg4}.jpg` loading="lazy" alt="")
+			+e.product-col.col-xl-auto.col-md-5
+				+e.product-box
+					+PB(`${data1.key1}`,`${data1.val1}`)
+					+PB(`${data1.key2}`,`${data1.val2}`)
+					+PB(`${data1.key3}`,`${data1.val3}`)
+					+PB(`${data1.key4}`,`${data1.val4}`)
+					+PB(`${data1.key5}`,`${data1.val5}`)
+					+PB(`${data1.key6}`,`${data1.val6}`)
+					+PB(`${data1.key7}`,`${data1.val7}`)
+					+PB(`${data1.key8}`,`${data1.val8}`)
+					+PB(`${data1.key9}`,`${data1.val9}`)
+					+PB(`${data1.key10}`,`${data1.val10}`)
+					+PB(`${data1.key11}`,`${data1.val11}`)
+					+PB(`${data1.key12}`,`${data1.val12}`)
+				+e.A(href="#").more больше характеристик
+				+e.img-box--4
+					img(src=`img/@2x/${data.Companyimg}.png` loading="lazy" alt="")
+			.col-xl.col-md-7
+				+e.black-section
+					h3=data.Price
+					+e.bonus-row.row
+						.col-auto
+							+e.bs-val=data.BonusValue
+						.col-auto
+							+e.bs-key бонусов
+						.col-auto
+							+e.img-box
+								img(src="img/svg/PCask.svg" loading="lazy" alt ="")
+					+e.btn-row.row
+						.col-6
+							+e.A.black-section-btn(href="#") В корзину
+						.col-6
+							+e.A.black-section-btn--b(href="#") Купить в 1 клик
+					+e.A(href='').credit-btn Оформить рассрочку
+				+e.BS-box
+					+BS("img/svg/PCvan.svg","Доставка:","бесплатно")
+					+BS("img/svg/PCmap.svg","Самовывоз:","сегодня, бесплатно")

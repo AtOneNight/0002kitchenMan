@@ -281,10 +281,37 @@
 	&__s4{
 		margin-bottom: rem(50);
 	}
-	&__Pc-row{
-		--bs-gutter-x: 3.625rem;
-		--bs-gutter-y: 2rem;
-		margin-bottom: rem(82);
+	&__swiper-con{
+		position: relative;
+		.swiper-prev,
+		.swiper-next {
+			@extend .ball-prev-next;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			z-index: 100;
+		}
+		.swiper-prev{
+			right: calc(100% + #{rem(30)});
+		}
+		.swiper-next {
+			left: calc(100% + #{rem(30)});
+		}
+		.swiper-slide{
+			&:not(.swiper-slide-active){
+				opacity: 0.2;
+				}
+			}
+			&:hover{
+				&:after{
+					opacity: 0.2;
+				}
+			}
+		}
+	&__simg-box{
+		@extend .accept-ratio-frame;
+		padding-top: calc(641/1360 * 100%);
+		min-height: rem(300);
 	}
 	&__img-col{
 		@include media-breakpoint-up(xl){
@@ -293,6 +320,11 @@
 		@include media-breakpoint-up(xxl){
 			width: 42.9% !important;
 		}
+	}
+	&__Pc-row{
+		--bs-gutter-x: 3.625rem;
+		--bs-gutter-y: 2rem;
+		margin-bottom: rem(82);
 	}
 	&__Pcimg-box{
 		@extend .accept-ratio-frame;
@@ -410,27 +442,6 @@
 			margin-bottom: 0;
 		}
 	}
-	&__border-section{
-		margin-bottom: 20px;
-		padding: 16px 1px 16px 27px;
-		border: 1px solid $gray-720;
-	}
-	&__BS-row{
-		--bs-gutter-x: 23px;
-	}
-	&__BS-img{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: rem(36);
-		height: rem(36);
-		img{
-			max-width: 100%;
-			width: auto;
-			max-height: 100%;
-			height: auto;
-		}
-	}
 	&__BS-key{
 		font-size: 16px;
 		line-height: calc(21/16);
@@ -442,38 +453,27 @@
 		line-height: calc(21/16);
 		color: $white;
 	}
+	&__border-section{
+		margin-bottom: 20px;
+		padding: 16px 1px 16px 27px;
+		border: 1px solid $gray-720;
+	}
+	&__BS-row{
+		--bs-gutter-x: 23px;
+	}
+	&__BS-img {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: rem(36);
+		height: rem(36);
 
-	&__swiper-con{
-		position: relative;
-		.swiper-prev,
-		.swiper-next {
-			@extend .ball-prev-next;
-			position: absolute;
-			top: 50%;
-			transform: translateY(-50%);
-			z-index: 100;
+		img {
+			max-width: 100%;
+			width: auto;
+			max-height: 100%;
+			height: auto;
 		}
-		.swiper-prev{
-			right: calc(100% + #{rem(30)});
-		}
-		.swiper-next {
-			left: calc(100% + #{rem(30)});
-		}
-		.swiper-slide{
-			&:not(.swiper-slide-active){
-				opacity: 0.2;
-				}
-			}
-			&:hover{
-				&:after{
-					opacity: 0.2;
-				}
-			}
-		}
-	&__simg-box{
-		@extend .accept-ratio-frame;
-		padding-top: calc(641/1360 * 100%);
-		min-height: rem(300);
 	}
 
 } // end.ProductCard

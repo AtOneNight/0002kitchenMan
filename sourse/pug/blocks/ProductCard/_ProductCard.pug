@@ -228,10 +228,6 @@ mixin smProductCard(data, data1)
 				img(src=`img/@2x/${data.PCimg}.jpg` loading="lazy" alt="#" )
 		+e.product-col.col-xl-auto.col-md-5
 			+e.product-box
-				-
-					for (let i = 0 ; i < data1.length; i++){
-						i
-					}
 				+PB(`${data1.key1}`,`${data1.val1}`)
 				+PB(`${data1.key2}`,`${data1.val2}`)
 				+PB(`${data1.key3}`,`${data1.val3}`)
