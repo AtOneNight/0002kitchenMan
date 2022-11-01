@@ -65,50 +65,29 @@ mixin ProductCard(data)
 					+e.img-box--2
 						img(src="img/@2x/PC5.jpg" alt="" loading="lazy")
 			+Pctabs
-			+e.s4.section-title
-				h3 Посудомоечная машина Asko DFI444B/1
-			+e.Pc-row.row
-				+e.img-col.col-xl-auto
-					+e.Pcimg-box
-						img(src="img/@2x/PC6.jpg" loading="lazy" alt="#" )
-				+e.product-col.col-xl-auto.col-md-5
-					+e.product-box
-						+PB("Артикул:","10209256")
-						+PB("Цвет:","нерж.сталь")
-						+PB("Гарантийный срок:	","24 мес")
-						+PB("Тип управления:","механическое")
-						+PB("Страна-производитель:","Турция")
-						+PB("Цвет фурнитуры:","эффект нержавеющей стали")
-						+PB("Глубина (см):","51")
-						+PB("Энергопотребление:","250 кВт")
-						+PB("Мин. температура:","-25 С")
-						+PB("Макс. температура:","+10 С")
-						+PB("Высота, см:","235")
-						+PB("Ширина, см:","120")
-					+e.A(href="#").more больше характеристик
-					+e.img-box--4
-						img(src="img/@2x/PCteka.png" loading="lazy" alt="")
-				.col-xl.col-md-7
-					+e.black-section
-						h3 69 990 руб.
-						+e.bonus-row.row
-							.col-auto
-								+e.bs-val +299.5
-							.col-auto
-								+e.bs-key бонусов
-							.col-auto
-								+e.img-box
-									img(src="img/svg/PCask.svg" loading="lazy" alt ="")
-						+e.btn-row.row
-							.col-6
-								+e.A.black-section-btn(href="#") В корзину
-							.col-6
-								+e.A.black-section-btn--b(href="#") Купить в 1 клик
-						+e.A(href='').credit-btn Оформить рассрочку
-					+e.BS-box
-						+BS("img/svg/PCvan.svg","Доставка:","бесплатно")
-						+BS("img/svg/PCmap.svg","Самовывоз:","сегодня, бесплатно")
-			+e.swiper-con
+			+smProductCard(
+				{
+					Header : "Посудомоечная машина Asko DFI444B/1 ",
+					PCimg: "PC6",
+					Companyimg:"PCteka",
+					Price:"69 990 руб.",
+					BonusValue:"+299.5"
+				},
+				{
+					key1:"Артикул:", 				val1:"10209256",
+					key2:"Цвет:",					val2:"нерж.сталь",
+					key3:"Гарантийный срок",		val3:"24 мес"	,
+					key4:"Тип управления",			val4:"Механичиское ",
+					key5:"Страна производитель ",	val5:"Турция",
+					key6:"Цвет фурнитуры",			val6:"эффект нержавеющей стали",
+					key7:"Глубина (см):",			val7:"51",
+					key8:"Энергопотребление:",		val8:"250 кВт",
+					key9:"Мин. температура:",		val9:"-25c",
+					key10:"Макс. температура:",		val10:"+10 С",
+					key11:"Высота, см:",			val11:"235",
+					key12:"Ширина, см:",			val12:"120",
+				})
+		+e.swiper-con
 				+e.PCswiper.swiper
 					.swiper-wrapper
 						.swiper-slide
@@ -238,3 +217,53 @@ mixin sProdCardTabsContent(tabName, imgNum, activeClasses='')
 				span=tabName
 			+e.dd-content.dd-content-js
 				block
+
+
+mixin smProductCard(data, data1)
+	+e.s4.section-title
+		h3=data.Header
+	+e.Pc-row.row
+		+e.img-col.col-xl-auto
+			+e.Pcimg-box
+				img(src=`img/@2x/${data.PCimg}.jpg` loading="lazy" alt="#" )
+		+e.product-col.col-xl-auto.col-md-5
+			+e.product-box
+				-
+					for (let i = 0 ; i < data1.length; i++){
+						i
+					}
+				+PB(`${data1.key1}`,`${data1.val1}`)
+				+PB(`${data1.key2}`,`${data1.val2}`)
+				+PB(`${data1.key3}`,`${data1.val3}`)
+				+PB(`${data1.key4}`,`${data1.val4}`)
+				+PB(`${data1.key5}`,`${data1.val5}`)
+				+PB(`${data1.key6}`,`${data1.val6}`)
+				+PB(`${data1.key7}`,`${data1.val7}`)
+				+PB(`${data1.key8}`,`${data1.val8}`)
+				+PB(`${data1.key9}`,`${data1.val9}`)
+				+PB(`${data1.key10}`,`${data1.val10}`)
+				+PB(`${data1.key11}`,`${data1.val11}`)
+				+PB(`${data1.key12}`,`${data1.val12}`)
+			+e.A(href="#").more больше характеристик
+			+e.img-box--4
+				img(src=`img/@2x/${data.Companyimg}.png` loading="lazy" alt="")
+		.col-xl.col-md-7
+			+e.black-section
+				h3=data.Price
+				+e.bonus-row.row
+					.col-auto
+						+e.bs-val=data.BonusValue
+					.col-auto
+						+e.bs-key бонусов
+					.col-auto
+						+e.img-box
+							img(src="img/svg/PCask.svg" loading="lazy" alt ="")
+				+e.btn-row.row
+					.col-6
+						+e.A.black-section-btn(href="#") В корзину
+					.col-6
+						+e.A.black-section-btn--b(href="#") Купить в 1 клик
+				+e.A(href='').credit-btn Оформить рассрочку
+			+e.BS-box
+				+BS("img/svg/PCvan.svg","Доставка:","бесплатно")
+				+BS("img/svg/PCmap.svg","Самовывоз:","сегодня, бесплатно")

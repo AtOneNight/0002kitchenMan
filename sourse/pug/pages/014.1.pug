@@ -11,11 +11,12 @@ include ../blocks/sBest/_sBest.pug
 include ../blocks/sGForm/_sGForm.pug
 include ../blocks/sBrends/_sBrends.pug
 include ../blocks/sTags/_sTags.pug
-include ../blocks/sArticles/_sArticles
+include ../blocks/sVac/_sVac.pug
+include ../blocks/sForm/_sForm
 
 block variables
     - let  mainPage= null
-    - let  bg= '010.png'
+    - let  bg= '13.png'
 
 block title
     - let  title= 'title'
@@ -26,6 +27,11 @@ block pagecontent
         +topLine()
         +top-nav()
         +brands()
-    +sArticles()
-    //нагадати серому за пагинацию
-    +footer()
+    +smProductCard(
+        {
+
+        },
+        {
+
+        }
+    )
