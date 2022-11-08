@@ -1151,7 +1151,7 @@ let PC1swiper = new Swiper('.swiper-pc', {
 			el: '.swiper-pc-thumb',
 			slidesPerView: 4
 		},
-		slidesPerView: 1,
-		watchOverflow: false
+		slideThumbActiveClass: "smProductCard2__thumb-active",
+		slidesPerView: 1
 	}
 });

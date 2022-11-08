@@ -6,11 +6,12 @@ mixin ProductCard2(data)
 		.container
 			+breadcrumb("Главная" , "Каталог" , "Холодильник Toshiba" ,"GR-RT565RS(N)")
 			+smProductCard2({
-				swiperImg: "PC-fridge",
-				swiperImg1: "PC-fridge-mini",
-				swiperImg2: "PC-fridge1",
-				swiperImg3: "PC-fridge2",
-				swiperImg4: "PC-fridge3",
+				swiperImg1:"PC-fridge", 									swiperImg21: "PC-fridge",
+				swiperImg2:"PC-fridge22",									swiperImg22: "PC-fridge22",
+				swiperImg3:"PC-fridge23",									swiperImg23: "PC-fridge23",
+				swiperImg4:"PC-fridge24",									swiperImg24: "PC-fridge24",
+
+
 				Header: "Холодильник Toshiba GR-RT565RS(N)",
 				PCimg: "PC6",
 				Companyimg: "PCteka",
@@ -20,16 +21,16 @@ mixin ProductCard2(data)
 				{
 					key1: "Артикул:",				val1: "10209256",
 					key2: "Цвет:", 					val2: "нерж.сталь",
-					key3: "Гарантийный срок",		val3: "24 мес",
-					key4: "Тип управления", 		val4: "Механичиское ",
-					key5: "Страна производитель ",  val5: "Турция",
-					key6: "Цвет фурнитуры", 		val6: "эффект нержавеющей стали",
+					key3: "Гарантийный срок:",		val3: "24 мес",
+					key4: "Тип управления:", 		val4: "Механичиское ",
+					key5: "Страна производитель:",  val5: "Турция",
+					key6: "Цвет фурнитуры:", 		val6: "эффект нержавеющей стали",
 					key7: "Глубина (см):", 			val7: "51",
 					key8: "Энергопотребление:", 	val8: "250 кВт",
 					key9: "Высота, см:", 			val9: "-25c",
 					key10: "Ширина, см:", 			val10: "120",
 					key11:"Мин. температура:", 		val11: "235",
-					key12: "Макс. температура", 	val12: "+10",
+					key12: "Макс. температура:", 	val12: "+10",
 
 				})
 	// end ProductCard2
@@ -38,37 +39,46 @@ mixin smProductCard2(data, data1)
 	+b.smProductCard2
 		+e.Card-header
 			h3=data.Header
+		+e.top-icons-row.row.gy-4
+			.col-auto
+				+Pcicon("0 отзывов")
+			.col-auto
+				+Pcicon("В избранное","PCheart")
+			.col-auto
+				+Pcicon("Сравнить","PCschedule")
+			.col-auto
+				+Pcicon("Поделиться","PCshare")
 		+e.Pc-row.row
 			+e.img-col.col-xl-auto
 				.swiper-pc.swiper-container
 					.swiper-wrapper
 						.swiper-slide
 							+e.img-box
-								img(src=`img/@2x/${data.swiperImg}.jpg` loading="lazy" alt="")
-						.swiper-slide
-							+e.img-box
-								img(src=`img/@2x/${data.swiperImg}.jpg` loading="lazy" alt="")
-						.swiper-slide
-							+e.img-box
-								img(src=`img/@2x/${data.swiperImg}.jpg` loading="lazy" alt="")
-						.swiper-slide
-							+e.img-box
-								img(src=`img/@2x/${data.swiperImg}.jpg` loading="lazy" alt="")
-				.swiper-pc-thumb.swiper-container
-					.swiper-wrapper
-						.swiper-slide
-							+e.img-box
 								img(src=`img/@2x/${data.swiperImg1}.jpg` loading="lazy" alt="")
 						.swiper-slide
 							+e.img-box
-								img(src=`img/@2x/${data.swiperImg2}.jpg` loading="lazy" alt="")
+								img(src=`img/@2x/${data.swiperImg2}.png` loading="lazy" alt="")
 						.swiper-slide
 							+e.img-box
-								img(src=`img/@2x/${data.swiperImg3}.jpg` loading="lazy" alt="")
+								img(src=`img/@2x/${data.swiperImg3}.png` loading="lazy" alt="")
 						.swiper-slide
 							+e.img-box
-								img(src=`img/@2x/${data.swiperImg4}.jpg` loading="lazy" alt="")
-			+e.product-col.col-xl-auto.col-md-5
+								img(src=`img/@2x/${data.swiperImg4}.png` loading="lazy" alt="")
+				.swiper-pc-thumb.swiper-container
+					.swiper-wrapper
+						.swiper-slide
+							+e.thumb-img-box
+								img(src=`img/@2x/${data.swiperImg21}.jpg` loading="lazy" alt="")
+						.swiper-slide
+							+e.thumb-img-box
+								img(src=`img/@2x/${data.swiperImg22}.png` loading="lazy" alt="")
+						.swiper-slide
+							+e.thumb-img-box
+								img(src=`img/@2x/${data.swiperImg23}.png` loading="lazy" alt="")
+						.swiper-slide
+							+e.thumb-img-box
+								img(src=`img/@2x/${data.swiperImg24}.png` loading="lazy" alt="")
+			+e.product-col.col-xl-auto.col-md-5.d-sm-none.d-md-block
 				+e.product-box
 					+PB(`${data1.key1}`,`${data1.val1}`)
 					+PB(`${data1.key2}`,`${data1.val2}`)
@@ -83,7 +93,7 @@ mixin smProductCard2(data, data1)
 					+PB(`${data1.key11}`,`${data1.val11}`)
 					+PB(`${data1.key12}`,`${data1.val12}`)
 				+e.A(href="#").more больше характеристик
-				+e.img-box--4
+				+e.company-img-box
 					img(src=`img/@2x/${data.Companyimg}.png` loading="lazy" alt="")
 			.col-xl.col-md-7
 				+e.black-section
@@ -94,7 +104,7 @@ mixin smProductCard2(data, data1)
 						.col-auto
 							+e.bs-key бонусов
 						.col-auto
-							+e.img-box
+							+e.ask-img-box
 								img(src="img/svg/PCask.svg" loading="lazy" alt ="")
 					+e.btn-row.row
 						.col-6
